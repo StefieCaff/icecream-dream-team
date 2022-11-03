@@ -7,13 +7,14 @@
 
 /* default styles*/
 
-// body {
+ body {
    //  font-family: Roboto, sans-serif;
-   //  font-style: $fontStyle;
-   //  color: $primaryColor;
-   //  font-size: $fontSize;
-   //  background-color: $primaryBackgroundColor;
- //} 
+  font-style: $fontStyle;
+  color: $darkestColor;
+  font-size: $fontSizeMain;
+  font-weight: $fontWeightMed;
+  background-color: $backgroundColorMain;
+ } 
 
 h1,
 h2,
@@ -45,13 +46,13 @@ img {
 //     font-style: $fontStyle;
 // }
 
-// .link {
-//     text-decoration: $noTextDeco;
-//     color: inherit;
-// }
+.link {
+    text-decoration: $noTextDeco;
+    color: inherit;
+}
 
 .list {
-    // list-style: $noListStyle;
+    list-style: $noListStyle;
     padding: 0;
     margin: 0;
 }
