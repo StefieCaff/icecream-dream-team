@@ -1,0 +1,56 @@
+// common variables/////////////
+$noListStyle: none;
+$noTextDeco: none;
+$fontStyle: normal;
+$lightestColor: #ffffff;                   //white
+$darkestColor: #000000;                    //black
+$darkAccentColor: #D41443;                 //darkpink
+$lightAccentColor: #FFA5BA;                 //lightpink
+
+// Hover Colors ///////////////////////
+$hoverLight: #ECEBEB; //lightpink
+
+
+//Extra Font Colors
+$fontColorAccentLight: #907E82;           //grey
+
+
+//font weights: main is 500 //////////
+$fontWeightLight: 400;
+$fontWeightMed: 500;
+$fontWeightHeavy: 700;
+
+//font sizes: very varied by screen size feel free to add any that I missed! /////////////
+// DT stands for dest top,
+// T stands for tablet,
+// M stands for mobile 
+
+$fontSizeMain: 14px;
+$fontSizeSmall: 12px;
+$fontSizeMedium: 16px;
+$fontSizeLarge: 20px;
+
+// These are for the headers
+//Mobile M
+$fontSizeMBig: 18px;
+$fontSizeMLargest: 34px;
+
+//Tablet T
+$fontSizeTBIg: 26px;
+$fontSizeTLargest: 48px;
+
+//Desktop DT
+$fontSizeDTBig: 30px;
+$fontSizeDTLargest: 58px;
+
+// Background Colors //////////////////////////
+
+// main
+$backgroundColorMain: #E5E5E5;                 //whiteish lightgrey
+$backgroundcolorSecondary: #FFF5F6;            //light pink variation
+
+// Extra Background Accent colors
+$backgroundAccentDark: #E17992;
+$backgroundAccentLight: #FFBBCA;
+$backgroundAccentExtra: #F0D1A5;             //lightyellow
+$backgroundAccentOther: #C2E297;             //lightgreen
