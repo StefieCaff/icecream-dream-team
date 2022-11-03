@@ -8,7 +8,7 @@
 /* default styles*/
 
  body {
-   //  font-family: Roboto, sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: $fontStyle;
   color: $darkestColor;
   font-size: $fontSizeMain;
@@ -42,9 +42,6 @@ img {
     height: auto;
 }
 
-// address {
-//     font-style: $fontStyle;
-// }
 
 .link {
     text-decoration: $noTextDeco;
