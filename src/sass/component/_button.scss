@@ -1,0 +1,23 @@
+%button {
+  font-family: 'DM Sans', sans-serif;
+  background-color: $lightestColor;
+  color: $darkAccentColor;
+  font-size: $fontSizeMedium;
+  font-weight: $fontWeightHeavy;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: $hoverLight;
+  }
+}
