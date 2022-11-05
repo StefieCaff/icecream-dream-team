@@ -5,6 +5,7 @@
 
 .about__label {
     font-size: 18px;
+    color: #FFA5BA;
 
 @media screen and (min-width:768px) {
     font-size: 26px;
@@ -16,6 +17,7 @@
 }
 
 .about__header {
+    color:#D41443;
     font-size: 34px;
 
 @media screen and (min-width:768px) {
@@ -29,6 +31,7 @@
 }
 
 .about__paragraph-one {
+    color: #000000;
     font-size: 12px;
 
 @media screen and (min-width:768px) {
@@ -41,6 +44,7 @@
 }
 
 .about__paragraph-two {
+    color: #907E82;
     font-size: 12px;
 
     @media screen and (min-width:768px) {
@@ -50,21 +54,4 @@
     @media screen and (min-width:1280px) {
         font-size: 14px;
     }
-}
-
-.button-about {
-    background-color: #FFFFFF;
-    border-radius: 22px;
-    width: 176px;
-    height: 44px;
-    font-size: 14px;
-    margin-left: 20px;
-
-    @media screen and (min-width:768px) {
-        margin-left: 400px;
-        }
-    
-    @media screen and (min-width:1280px) {
-        margin-left: 616px;
-        }
 }
