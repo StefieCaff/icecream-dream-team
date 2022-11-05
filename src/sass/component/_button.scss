@@ -21,3 +21,29 @@
     background-color: $hoverLight;
   }
 }
+
+
+/* About Button */
+.button-about {
+  background-color: #FFFFFF;
+  border-radius: 22px;
+  width: 176px;
+  height: 44px;
+  font-size: 14px;
+  margin-left: 20px;
+
+  line-height: 21px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #D41443;
+
+  @media screen and (min-width:768px) {
+    margin-left: 400px;
+  }
+
+  @media screen and (min-width:1280px) {
+    margin-left: 616px;
+  }
+}
