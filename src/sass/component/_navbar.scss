@@ -1,3 +1,45 @@
-.burger {
+.nav {
+  padding-top: 8px;
+}
+
+.container__nav {
+  background-color: $backgroundAccentLight;
+}
+
+.logo {
+    postition: relative;
+    margin-left: 20px;
     fill: $darkAccentColor;
+}
+
+.nav__burger {
+    position: absolute;
+    right: 20px;
+    top: 27px;
+}
+
+.burger {
+  cursor: pointer;
+    // transition-property: fill;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    // &:hover,
+    // &:focus {
+    //   fill: $darkestColor;
+    // }
+
+    @media screen and (min-width:1280px) {
+      display: none;
+    }
+}
+
+.navbar {
+  display: none;
+  border: none;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+
 }
