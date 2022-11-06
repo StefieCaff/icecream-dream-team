@@ -22,6 +22,15 @@
   }
 }
 
+.button--buy {
+  @extend %button;
+  padding: 10px 48px;
+}
+
+.button__icon {
+  fill: currentColor;
+  margin-left: 15px;
+}
 
 /* About Button */
 .button-about {
