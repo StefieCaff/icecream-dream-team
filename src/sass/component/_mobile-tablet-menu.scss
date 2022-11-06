@@ -1,0 +1,38 @@
+.mobile-tablet__wrapper {
+  position: fixed;
+  top: 0;
+  right: -200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100vw;
+  height: 100vh;
+  background-color: $backgroundAccentDark;
+  z-index: 1;
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-tablet__button-close {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $darkAccentColor;
+    }
+}
+
+.is-open {
+    transform: translateX(0);
+}
