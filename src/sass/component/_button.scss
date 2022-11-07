@@ -51,6 +51,25 @@
   margin-left: 12px;
 }
 
+.hero__button {
+  padding: 7px;
+  font-size: 8px;
+  font-weight: $fontWeightLight;
+  line-height: 10px;
+}
+
+.hero__button--products {
+    @extend %button;
+    width: 62px;
+    color: $lightestColor;
+    background-color: $darkAccentColor;
+}
+
+.hero__button--how {
+    @extend %button;
+    width: 82px;
+}
+
 /* About Button */
 .button-about {
     background-color: #FFFFFF;

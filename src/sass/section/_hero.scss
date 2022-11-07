@@ -1,0 +1,26 @@
+.hero {
+  background-color: $backgroundAccentLight;
+}
+
+.hero__container {
+  padding-right: 5px;
+  position: relative;
+}
+
+.hero__heading {
+  font-family: 'Titan One';
+  font-weight: $fontWeightLight;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $lightestColor;
+}
+
+.hero__image--main {
+  position: absolute;
+  top: 92px;
+  right: 32px;
+  z-index: 0;
+
+}
