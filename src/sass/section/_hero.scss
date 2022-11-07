@@ -1,13 +1,18 @@
 .hero {
   background-color: $backgroundAccentLight;
+  padding: 220px 0px;
 }
 
 .hero__container {
-  padding-right: 5px;
   position: relative;
+  z-index: 1;
+  bottom: 108px;
 }
 
 .hero__heading {
+  position: absolute;
+  z-index: 1;
+  margin-left: 5px;
   font-family: 'Titan One';
   font-weight: $fontWeightLight;
   font-size: 26px;
@@ -17,10 +22,29 @@
   color: $lightestColor;
 }
 
-.hero__image--main {
-  position: absolute;
-  top: 92px;
-  right: 32px;
-  z-index: 0;
+.hero__heading--big {
+  color: $darkAccentColor;
+  font-size: 46px;
+  line-height: 40px;
+}
 
+.hero__images {
+  position: absolute;
+  z-index: 0;
+  top: -96px;
+  left: 34px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: 100px 25px;
+  background-repeat: no-repeat;
+  background-color: $lightAccentColor;
+  background-image: url(../images/mobile/m-hero171.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/m-hero342.png);
+    }
 }
