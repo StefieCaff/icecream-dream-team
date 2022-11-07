@@ -4,9 +4,8 @@
   right: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 40px;
-  width: 100vw;
+  padding: 60px 20px 0px;
+  width: 250px;
   height: 100vh;
   background-color: $backgroundAccentDark;
   z-index: 1;
@@ -35,4 +34,17 @@
 
 .is-open {
     transform: translateX(0);
+}
+
+.mobile-tablet-navbar__item {
+  margin-bottom: 22px;
+  color: $lightestColor;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+      color: $darkAccentColor;
+        }
 }
