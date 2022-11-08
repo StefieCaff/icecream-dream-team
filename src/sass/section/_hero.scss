@@ -5,6 +5,10 @@
   @media screen and (min-width: 768px) {
     padding: 168px 0px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding: 305px 0px;
+  }
 }
 
 .hero__container {
@@ -13,6 +17,10 @@
 
   @media screen and (min-width: 768px) {
     bottom: -168px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: -305px;
   }
 }
 
@@ -118,7 +126,7 @@
   }
 }
 
-.slider {
+.hero--advantages {
   display: none;
 
   @media screen and (min-width: 768px) {
@@ -127,11 +135,14 @@
     z-index: 1;
     left: 184px;
     bottom: 64px;
-
   }
 }
 
-.slider__image {
+.hero--advantages__image {
+  display: none;
+  
+  @media screen and (min-width: 768px) {
+  display: block;
   position: absolute;
   bottom: 16px;
   left: 32px;
@@ -144,13 +155,83 @@
     (min-resolution: 2dppx) {
       background-image: url(../images/tablet/t-pitcher304.png);
     }
+  }
   width: 152px;
   height: 154px;
 }
 
-.slider__description {
+.hero--advantages__description {
   font-weight: $fontWeightLight;
   font-size: 8px;
   line-height: 12px;
+  color: $lightestColor;
+}
+
+.hero--contacts {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    z-index:1;
+    right: 42px;
+    bottom: 220px;
+    text-align: right;
+    }
+  }
+
+.hero--contacts__item {
+  transform-style: preserve-3d;
+  font-family: 'Titan One';
+  font-weight: $fontWeightLight;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: $darkAccentColor;
 }
+
+.hero--contacts__item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.hero--contacts__item::after {
+  transform: translateZ(-1px);
+  position: absolute;
+  right: -10px;
+  top:-2px;
+  content: "";
+  background-color: $lightestColor;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.hero--contacts__link {
+  font-weight: $fontWeightLight;
+  font-size: 8px;
+  line-height: 10px;
+  color: $lightestColor;
+}
+
+  .hero--contacts__image {
+    display:none;
+
+    @media screen and (min-width: 768px){
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/tablet/t-tasty190.png);
+    
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/t-tasty380.png);
+    }
+  }
+    width: 190px;
+    height: 150px;
+  }
