@@ -1,11 +1,19 @@
 .hero {
   background-color: $backgroundAccentLight;
   padding: 210px 0px;
+
+  @media screen and (min-width: 768px) {
+    padding: 168px 0px;
+  }
 }
 
 .hero__container {
   position: relative;
   bottom: -210px;
+
+  @media screen and (min-width: 768px) {
+    bottom: -168px;
+  }
 }
 
 .hero__nav {
@@ -14,6 +22,10 @@
   left: 20px;
   bottom: 208px;
 
+  @media screen and (min-width: 768px) {
+    left: 32px;
+    bottom: 195px;
+  }
 }
 
 .hero__heading {
@@ -24,12 +36,22 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $lightestColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 25px;
+  }
 }
 
 .hero__heading--big {
   color: $darkAccentColor;
   font-size: 46px;
   line-height: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 30px;
+  }
 }
 
 .hero__images {
@@ -43,14 +65,41 @@
     (min-resolution: 2dppx) {
       background-image: url(../images/mobile/m-hero342.png);
     }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/t-hero143.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/t-hero286.png);
+      }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/desktop/d-hero236.png);
+    
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/d-hero472.png);
+        }
+  }
 }
 
 .hero__image--hero{
   transform-style: preserve-3d;
-  bottom: 0px;
   left: 117px;
+  bottom: 0px;
   width: 171px;
   height: 410px;
+
+  @media screen and (min-width: 768px) {
+    left: 322px;
+    bottom: 0px;
+    width: 143px;
+    height: 336px;
+  }
 }
 
 .hero__image--hero::after {
@@ -61,6 +110,11 @@
   content: "";
   background-color: $lightAccentColor;
   border-radius: 50%;
-  height: 334px;
-  width: 336px;
+  width: 335px;
+  height: 333px;
+  
+@media screen and (min-width: 768px) {
+    left: -75px;
+    bottom: 40px;
+  }
 }
