@@ -68,7 +68,6 @@
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/tablet/t-hero143.png);
-
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -117,4 +116,41 @@
     left: -75px;
     bottom: 40px;
   }
+}
+
+.slider {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 184px;
+    bottom: 64px;
+
+  }
+}
+
+.slider__image {
+  position: absolute;
+  bottom: 16px;
+  left: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/tablet/t-pitcher152.png);
+  
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/t-pitcher304.png);
+    }
+  width: 152px;
+  height: 154px;
+}
+
+.slider__description {
+  font-weight: $fontWeightLight;
+  font-size: 8px;
+  line-height: 12px;
+  color: $darkAccentColor;
 }
