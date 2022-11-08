@@ -1,19 +1,18 @@
 .hero {
   background-color: $backgroundAccentLight;
-  padding: 220px 0px;
+  padding: 210px 0px;
 }
 
 .hero__container {
   position: relative;
-  z-index: 1;
-  bottom: -220px;
+  bottom: -210px;
 }
 
 .hero__nav {
   position: absolute;
   z-index: 1;
   left: 20px;
-  bottom: 202px;
+  bottom: 208px;
 
 }
 
@@ -35,11 +34,6 @@
 
 .hero__images {
   position: absolute;
-  z-index: 0;
-  bottom: 0px;
-  right:-34px;
-  width: 346px;
-  height: 344px;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(../images/mobile/m-hero171.png);
@@ -51,10 +45,21 @@
     }
 }
 
-.hero__images::after {
+.hero__image--hero{
+  transform-style: preserve-3d;
+  bottom: 0px;
+  left: 117px;
+  width: 171px;
+  height: 410px;
+}
+
+.hero__image--hero::after {
+  transform: translateZ(-1px);
   position: absolute;
-  z-index: 0;
-  fill: $backgroundAccentLight;
+  bottom: 85px;
+  left: -80px;
+  content: "";
+  background-color: $lightAccentColor;
   border-radius: 50%;
   height: 334px;
   width: 336px;
