@@ -1,44 +1,75 @@
-.products__label {
-  font-family:'Titan One', sans-serif;
-  font-size: $fontSizeMBig;
-  font-weight: $fontWeightLight;
-  color: $lightAccentColor;
-  letter-spacing: 0.04em;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
+.products {
+  display: flex;
+  flex-direction: column;
 }
 
-.products__header {
-  font-family: 'Titan One', sans-serif;
-  color: $darkAccentColor;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: $fontWeightLight;
-  font-size: $fontSizeMLargest;
-  line-height: 39px;
-  letter-spacing: 0.04em;
+.products__item{
+  background: #FFB8CA;
+  border-radius: 24px;
 }
 
-%products-images {
+.products__img {
+  margin-bottom: 20px;
   width: 280px;
-  height: 280px;
+
+  @media screen and (min-width:768px) {
+    width: 224px;
+    
+  }
+
+  @media screen and (min-width:768px) {
+     width: 368px;
+  }
 }
 
-.products-card__image--cone {
-  @extend %products-images;
+.products__img--cone {
   background-color: $backgroundAccentLight;
   border-radius: 50%;
+  width: 280px;
+  height:280px;
+
+  @media screen and (min-width:768px) {
+    width: 224px;
+    height: 224px;
+    
+  }
+    
+  @media screen and (min-width:768px) {
+    width: 368px;
+    height: 368px;
+  }
 }
 
-.products-card__image--coffee {
-    @extend %products-images;
+.products__img--coffee {
     background-color: $backgroundAccentExtra;
     border-radius: 50%;
+    width: 280px;
+    height: 280px;
+  
+  @media screen and (min-width:768px) {
+    width: 224px;
+    height: 224px;
+  }
+    
+  @media screen and (min-width:768px) {
+    width: 368px;
+    height: 368px;
+  }
 }
 
-.products-card__image--milkshake {
-    @extend %products-images;
+.products__img--milkshake {
     background-color: $backgroundAccentOther;
     border-radius: 50%;
+    width: 280px;
+    height: 280px;
+
+  @media screen and (min-width:768px) {
+      width: 224px;
+      height: 224px;
+    }
+  
+  @media screen and (min-width:768px) {
+    width: 368px;
+    height: 368px;
+  }
 }
