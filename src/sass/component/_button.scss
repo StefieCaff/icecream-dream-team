@@ -12,13 +12,14 @@
     border-radius: 22px;
     border: none;
     cursor: pointer;
-    transition-property: background-color;
+    transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,
     &:hover {
         background-color: $hoverLight;
+        color: $darkAccentColor;
     }
 }
 
@@ -58,17 +59,12 @@
 }
 
 .hero__button {
-  display: none;
- 
-
-  @media screen and (min-width: 768px) {
     display: inline-flex;
     padding: 7px;
     font-size: 8px;
     font-weight: $fontWeightLight;
     line-height: 10px;
     margin: 15px 8px 0px 0px;
-  }
 
   @media screen and (min-width: 1280px) {
     padding: 12px;
