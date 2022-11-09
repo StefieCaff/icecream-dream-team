@@ -108,18 +108,28 @@
 
 .hero--advantages__button {
   background-color: $lightestColor;
-  background-image: url(../images/tablet/t-arrow-right.png);
+  background-image: url(../images/tablet/t-arrow-right18.png);
   height: 18px;
   width: 18px;
+  margin-top: 7px;
   border-radius: 50%;
   border: none;
 
   @media screen and (min-width:1280px) {
-    background-image: url(../images/desktop/d-arrow-right.png);
+    background-image: url(../images/desktop/d-arrow-right26.png);
     width: 26px;
     height: 26px;
     margin-top: 20px;
   }
+}
+
+.products-card__button {
+  background-color: $lightestColor;
+  background-image: url(../images/arrow-right-products.png);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
 }
 
 /* About Button */

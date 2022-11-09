@@ -1,0 +1,44 @@
+.products__label {
+  font-family:'Titan One', sans-serif;
+  font-size: $fontSizeMBig;
+  font-weight: $fontWeightLight;
+  color: $lightAccentColor;
+  letter-spacing: 0.04em;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products__header {
+  font-family: 'Titan One', sans-serif;
+  color: $darkAccentColor;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: $fontWeightLight;
+  font-size: $fontSizeMLargest;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+}
+
+%products-images {
+  width: 280px;
+  height: 280px;
+}
+
+.products-card__image--cone {
+  @extend %products-images;
+  background-color: $backgroundAccentLight;
+  border-radius: 50%;
+}
+
+.products-card__image--coffee {
+    @extend %products-images;
+    background-color: $backgroundAccentExtra;
+    border-radius: 50%;
+}
+
+.products-card__image--milkshake {
+    @extend %products-images;
+    background-color: $backgroundAccentOther;
+    border-radius: 50%;
+}
