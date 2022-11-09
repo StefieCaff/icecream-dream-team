@@ -22,7 +22,7 @@
     }
 }
 
-.button--buy-mobile {
+.button--buy-mobile-menu {
     @extend %button;
     padding: 10px 48px;
     width: 209px;
@@ -32,13 +32,15 @@
 .button--buy-tablet {
   @extend %button;
   display: none;
+
   @media screen and (min-width:768px) {
     display: block;      
-    padding: 10px 37px;
+    padding: 10px 32px;
+    width: 160px;
   }
 
   @media screen and (min-width: 1280px) {
-  margin-right: -32px;
+    margin-right: -32px;
   }
 }
 
