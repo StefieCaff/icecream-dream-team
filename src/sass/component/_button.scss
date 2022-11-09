@@ -30,12 +30,16 @@
 }
 
 .button--buy-tablet {
-    @extend %button;
-    display: none;
-     @media screen and (min-width:768px) {
-        display: flex;      
-        padding: 10px 37px;
-     }
+  @extend %button;
+  display: none;
+  @media screen and (min-width:768px) {
+    display: block;      
+    padding: 10px 37px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  margin-right: -32px;
+  }
 }
 
 .button__icon-menu {
@@ -52,17 +56,23 @@
 }
 
 .hero__button {
-  position: absolute;
-  z-index: 1;
-  padding: 7px;
-  font-size: 8px;
-  font-weight: $fontWeightLight;
-  line-height: 10px;
+  display: none;
+ 
 
   @media screen and (min-width: 768px) {
-    position: unset;
     display: inline-flex;
-    margin-top: 20px;
+    padding: 7px;
+    font-size: 8px;
+    font-weight: $fontWeightLight;
+    line-height: 10px;
+    margin: 15px 8px 0px 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 12px;
+    font-size: $fontSizeMain;
+    line-height: 18px;
+    margin: 24px 10px 0px 0px;
   }
 }
 
@@ -73,6 +83,12 @@
     background-color: $darkAccentColor;
     left: 0px;
     top: 120px;
+
+  @media screen and (min-width: 1280px) {
+    width: 107px;
+    // left: 0px;
+    // top: 0px;
+  }
 }
 
 .hero__button--how {
@@ -80,15 +96,28 @@
     width: 82px;
     Left: 70px;
     top: 120px;
+
+  @media screen and (min-width: 1280px) {
+    width: 138px;
+    // left: 0px;
+    // top: 0px;
+    }
 }
 
 .hero--advantages__button {
   background-color: $lightestColor;
-  background: url(../images/tablet/t-arrow-right.png);
+  background-image: url(../images/tablet/t-arrow-right.png);
   height: 18px;
   width: 18px;
   border-radius: 50%;
   border: none;
+
+  @media screen and (min-width:1280px) {
+    background-image: url(../images/desktop/d-arrow-right.png);
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+  }
 }
 
 /* About Button */
