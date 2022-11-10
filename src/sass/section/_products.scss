@@ -4,7 +4,7 @@
 }
 
 .products__item{
-  background: #FFB8CA;
+  background: $backgroundAccentLight;
   border-radius: 24px;
 }
 
@@ -13,8 +13,7 @@
   width: 280px;
 
   @media screen and (min-width:768px) {
-    width: 224px;
-    
+    width: 224px; 
   }
 
   @media screen and (min-width:768px) {
