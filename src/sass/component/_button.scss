@@ -1,46 +1,45 @@
 %button {
-    font-family: 'DM Sans', sans-serif;
-    background-color: $lightestColor;
-    color: $darkAccentColor;
-    font-size: $fontSizeMedium;
-    font-weight: $fontWeightHeavy;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.06em;
-    border-radius: 22px;
-    border: none;
-    cursor: pointer;
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'DM Sans', sans-serif;
+  background-color: $lightestColor;
+  color: $darkAccentColor;
+  font-size: $fontSizeMedium;
+  font-weight: $fontWeightHeavy;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  @include transition (background-color 1s, color 1s);
 
     &:focus,
     &:hover {
-        background-color: $hoverLight;
-        color: $darkAccentColor;
-    }
+
+      background-color: $hoverLight;
+      color: $darkAccentColor;
+  }
 }
 
 .button--buy-mobile-menu {
-    @extend %button;
-    padding: 10px 48px;
-    width: 209px;
-    margin-bottom: 32px;
+  @extend %button;
+  padding: 10px 48px;
+  width: 209px;
+  margin-bottom: 32px;
 }
 
 .button--buy-tablet {
   @extend %button;
   display: none;
 
-  @media screen and (min-width:768px) {
+  @include mq (tablet) {
     display: block;      
     padding: 10px 32px;
     width: 160px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include mq (desktop) {
     margin-right: -32px;
   }
 }
@@ -49,7 +48,7 @@
     fill: currentColor;
     margin-left: 15px;
 
-    @media screen and (min-width:768px) {
+    @include mq (tablet) {
       margin-left: 14px;
     }
 }
@@ -59,6 +58,7 @@
 }
 
 .hero__button {
+  @extend %button;
     display: inline-flex;
     padding: 7px;
     font-size: 8px;
@@ -66,7 +66,7 @@
     line-height: 10px;
     margin: 15px 8px 0px 0px;
 
-  @media screen and (min-width: 1280px) {
+  @include mq (desktop) {
     padding: 12px;
     font-size: $fontSizeMain;
     line-height: 18px;
@@ -74,31 +74,25 @@
   }
 }
 
-.hero__button--products {
-    @extend %button;
+.hero__button--products { 
     width: 62px;
     color: $lightestColor;
     background-color: $darkAccentColor;
     left: 0px;
     top: 120px;
 
-  @media screen and (min-width: 1280px) {
+  @include mq (desktop) {
     width: 107px;
-    // left: 0px;
-    // top: 0px;
   }
 }
 
 .hero__button--how {
-    @extend %button;
     width: 82px;
     Left: 70px;
     top: 120px;
 
-  @media screen and (min-width: 1280px) {
+  @include mq (desktop) {
     width: 138px;
-    // left: 0px;
-    // top: 0px;
     }
 }
 
@@ -111,7 +105,7 @@
   border-radius: 50%;
   border: none;
 
-  @media screen and (min-width:1280px) {
+  @include mq (desktop) {
     background-image: url(../images/desktop/d-arrow-right26.png);
     width: 26px;
     height: 26px;
@@ -144,11 +138,11 @@
     text-align: center;
     color: #D41443;
 
-    @media screen and (min-width:768px) {
+    @include mq (tablet) {
         margin-left: 400px;
     }
 
-    @media screen and (min-width:1280px) {
+    @include mq (desktop) {
         margin-left: 616px;
     }
 }

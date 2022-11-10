@@ -47,7 +47,7 @@ img {
 // ice cream styles
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  @include fontFamily (main);
   font-style: $fontStyle;
   color: $darkestColor;
   font-size: $fontSizeMain;
@@ -56,7 +56,7 @@ body {
  }
 
 .section__label {
-  font-family: 'Titan One', sans-serif;
+  @include fontFamily(secondary);
   font-size: $fontSizeMBig;
   font-weight: $fontWeightLight;
   color: $lightAccentColor;
@@ -67,7 +67,7 @@ body {
 }
 
 .section__header {
-  font-family: 'Titan One', sans-serif;
+  @include fontFamily(secondary);
   color: $darkAccentColor;
   text-align: center;
   text-transform: uppercase;
@@ -75,4 +75,8 @@ body {
   font-size: $fontSizeMLargest;
   line-height: 39px;
   letter-spacing: 0.04em;
+}
+
+%animation {
+    @include transition ();
 }

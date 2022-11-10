@@ -16,15 +16,13 @@
 }
 
 .mobile-tablet__button-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  @include transition (fill 1s);
 
     &:hover,
     &:focus {
@@ -40,12 +38,10 @@
   margin-bottom: 22px;
   color: $lightestColor;
   cursor: pointer;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@include transition(color 1s);
     
     &:hover,
     &:focus {
       color: $darkAccentColor;
-        }
+    }
 }
