@@ -127,18 +127,23 @@
 /* About Button */
 .button-about {
     background-color: #FFFFFF;
+    border: none;
     border-radius: 22px;
+  
     width: 176px;
     height: 44px;
     font-size: 14px;
+    font-weight: 700;
     margin-left: 20px;
 
-    line-height: 21px;
-    position: absolute;
+    line-height: 18px;
+
     display: flex;
-    align-items: center;
     text-align: center;
+    justify-content: center;
+ 
     color: #D41443;
+    padding: 11px 19px 10px 20px;
 
     @include mq (tablet) {
         margin-left: 400px;
@@ -147,4 +152,12 @@
     @include mq (desktop) {
         margin-left: 616px;
     }
+
+    &__svg {
+      fill: red;
+      border: 2px;
+      margin-left: 13px;
+      margin-top: 6px;
+    }
+
 }

@@ -1,3 +1,14 @@
+.section__gallery {
+   background: linear-gradient(180deg, rgba(255, 245, 246, 1) 35%, rgba(229, 229, 229, 1) 35%);
+     
+}
+.gallery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
 .gallery__image {
     display: flex;
     align-items: center;
