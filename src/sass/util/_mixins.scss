@@ -10,21 +10,7 @@
 }
 
 @mixin cardBackground ($cardB) {
-  $pink: $backgroundAccentLight;
-  $lightgreen: $backgroundAccentOther;
-  $yellow: $backgroundAccentExtra;
-
-  @if $cardB == 'pink' {
-    background-color: $backgroundAccentLight;
-  }
-
-  @if cardB == 'lightgreen '{
-lbackground-color: backgroundAccentOther;
-  }
-
-  @if cardB == 'yellow' {
-    background-color: $backgroundAccentExtra;
-  }
+  background-color: $cardB;
 }
 
 @mixin transition($properties...) {

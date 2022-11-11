@@ -1,74 +1,61 @@
-.products {
-  display: flex;
-  flex-direction: column;
-}
+// .products {
+
+// }
 
 .products__item{
-  background: $backgroundAccentLight;
   border-radius: 24px;
+  margin-top: 140px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  
+}
+
+.products__item--cone {
+  margin-bottom: 20px;
+  width: 280px;
+  @include cardBackground ($backgroundAccentLight);
+  background-image: url(../images/mobile/m-cone280.png);
+  @include mq (retina) {
+    background-image: url(../images/mobile/m-cone560.png);
+  }
+}
+
+.products__item--coffee {
+  @include cardBackground ($backgroundAccentExtra);
+    background-image: url(../images/tablet/t-coffee224.png);
+    
+  @include mq (retina) {
+    background-image: url(../images/tablet/t-coffee448.png);
+  }
+}
+
+.products__item--milkshake {
+  @include cardBackground ($backgroundAccentOther);
+    background-image: url(../images/desktop/d-milkshake368.png);
+    
+  @include mq (retina) {
+    background-image: url(../images/desktop/d-milkshake736.png);
+  }
 }
 
 .products__img {
   margin-bottom: 20px;
   width: 280px;
-
-  @media screen and (min-width:768px) {
+  
+  @include mq(tablet) {
     width: 224px; 
   }
 
-  @media screen and (min-width:768px) {
+  @include mq(desktop) {
      width: 368px;
   }
 }
 
-.products__img--cone {
-  background-color: $backgroundAccentLight;
-  border-radius: 50%;
-  width: 280px;
-  height:280px;
-
-  @media screen and (min-width:768px) {
-    width: 224px;
-    height: 224px;
-    
-  }
-    
-  @media screen and (min-width:768px) {
-    width: 368px;
-    height: 368px;
-  }
+.products__header {
+  text-align: center;
 }
 
-.products__img--coffee {
-    background-color: $backgroundAccentExtra;
-    border-radius: 50%;
-    width: 280px;
-    height: 280px;
-  
-  @media screen and (min-width:768px) {
-    width: 224px;
-    height: 224px;
-  }
-    
-  @media screen and (min-width:768px) {
-    width: 368px;
-    height: 368px;
-  }
-}
-
-.products__img--milkshake {
-    background-color: $backgroundAccentOther;
-    border-radius: 50%;
-    width: 280px;
-    height: 280px;
-
-  @media screen and (min-width:768px) {
-      width: 224px;
-      height: 224px;
-    }
-  
-  @media screen and (min-width:768px) {
-    width: 368px;
-    height: 368px;
-  }
+.products__description {
+  text-align: center;
 }
