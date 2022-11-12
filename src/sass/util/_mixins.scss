@@ -1,6 +1,6 @@
 @mixin fontFamily($family) {
   $main: 'DM Sans', sans-serif;
-  $secondary: 'Titan One', sans-serif;
+  $secondary: 'Titan One';
   @if $family == 'main' {
     font-family: $main;
   }
@@ -73,12 +73,13 @@
 }
 
 @mixin productImg ($background-image1x, $background-image2x, $width, $height) {
-  background-image: $background-image;
+  background-image: $background-image1x;
   // position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
   width: $width;
   height: $height;
+  margin-bottom: 20px;
 
     @include mq (retina) {
       background-image: $background-image2x;
