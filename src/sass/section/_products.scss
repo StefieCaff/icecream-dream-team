@@ -1,6 +1,19 @@
-// .products-container {
-// position: relative;
-// }
+.products-container {
+  position: relative;
+}
+
+.products__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // margin-bottom: 140px;
+}
+
+.products__card {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
 .products__item--cone {
 @include productCard ($backgroundAccentLight);
@@ -14,55 +27,75 @@
   @include productCard ($backgroundAccentOther);
 }
 
-// .products__img--cone {
-//   position: absolute;
-//   margin-bottom: 20px;
-//   width: 280px;
-//   height: 280px;
-//   // @include cardBackground ($backgroundAccentLight);
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   background-image: url(../images/mobile/m-cone280.png);
-//   @include mq (retina) {
-//     background-image: url(../images/mobile/m-cone560.png);
-//   }
-// }
+.products__img--cone {
+  @include productImg (url(../images/mobile/m-cone280.png), url(../images/mobile/m-cone560.png), 280px, 280px);  
 
-// .products__item--coffee {
-//   // @include cardBackground ($backgroundAccentExtra);
-//     background-image: url(../images/tablet/t-coffee224.png);
-    
-//   @include mq (retina) {
-//     background-image: url(../images/tablet/t-coffee448.png);
-//   }
-// }
+}
 
-// .products__item--milkshake {
-//   // @include cardBackground ($backgroundAccentOther);
-//     background-image: url(../images/desktop/d-milkshake368.png);
-    
-//   @include mq (retina) {
-//     background-image: url(../images/desktop/d-milkshake736.png);
-//   }
-// }
+.products__img--coffee {
+  @include productImg (url(../images/tablet/t-coffee224.png), url(../images/tablet/t-coffee448.png), 280px, 280px);
 
-// .products__img {
-//   margin-bottom: 20px;
-//   width: 280px;
+}
+
+.products__img--milkshake {
+@include productImg (url(../images/desktop/d-milkshake368.png), url(../images/desktop/d-milkshake736.png), 280px, 280px);
+
+}
+
+.products__img {
+  margin-bottom: 20px;
+
   
-//   @include mq(tablet) {
-//     width: 224px; 
-//   }
+  @include mq(tablet) {
+    width: 224px;
+    height: 224px;
+    margin-bottom: 32px;
+  }
 
-//   @include mq(desktop) {
-//      width: 368px;
-//   }
-// }
+  @include mq(desktop) {
+     width: 368px;
+     height: 394px;
+  }
+}
 
 .products__header {
+  padding-top: 160px;
+  margin-bottom: 64px;
+  color: $lightestColor;
+  @include fontFamily (secondary);
+  font-weight: $fontWeightLight;
+  font-size: fontSizeLarge;
+  line-height: 23px;
   text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.products__header::after {
+  transform: translateZ(-1px);
+  position: absolute;
+  right: 40;
+  top: 212;
+  content: "";
+  background-image: url('../images/products-ellipse.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 26px;
+  height: 6px;
 }
 
 .products__description {
+  @include fontFamily (main);
+  color: $lightestColor;
+  font-weight: $fontWeightHeavy;
+  font-size: $fontSizeMain;
+  line-height: 21px;
   text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.products__button {
+  margin: 32px 0 40px 0;
+  // position: absolute;
 }
