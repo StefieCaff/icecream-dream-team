@@ -9,10 +9,6 @@
   }
 }
 
-@mixin cardBackground ($cardB) {
-  background-color: $cardB;
-}
-
 @mixin transition($properties...) {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -74,4 +70,25 @@
       @content;
     }
   }
+}
+
+@mixin productImg ($background-image1x, $background-image2x, $width, $height) {
+  background-image: $background-image;
+  // position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: $width;
+  height: $height;
+
+    @include mq (retina) {
+      background-image: $background-image2x;
+
+      }
+}
+
+@mixin productCard ($background-color) {
+  background-color: $background-color;
+  border-radius: 24px;
+  // transform-style: preserve-3d;
+  // position: absolute;
 }
