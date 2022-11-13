@@ -1,25 +1,11 @@
 .products-container {
   position: relative;
-
-  @include mq (tablet) {
-    // margin-left: 16px;
-  }
-
-  @include mq (desktop){
-    margin-left: 0px;
-  }
-  
 }
 
 .products {
   @include mq (tablet) {
     display: flex;
   }
-
-  // @include mq (desktop){
-  //   // flex-wrap: nowrap;
-  //   // width: 368px;
-  // }
 }
 
 .products__item {
@@ -38,9 +24,10 @@
     margin-top: 158px;
   }
 
-  // @include mq (desktop) {
-  //   flex-direction: row;
-  // }
+  @include mq (desktop) {
+    margin-top: 281px;
+    flex-grow: 1;
+  }
 }
 
 .products__card:not(:last-child) {
@@ -54,7 +41,15 @@
 }
 
 .products__card--cone {
-@include productCard ($backgroundAccentLight);
+  @include productCard ($backgroundAccentLight);
+
+  @include mq (tablet) {
+    margin-left: 32px;
+  }
+
+  @include mq (desktop) {
+    margin-left: 0px;
+  }
 }
 
 .products__card--coffee{
@@ -70,11 +65,11 @@
   position: absolute;
 
   @include mq (tablet) {
-    left: 18;
+    left: 50;
   }
 
   @include mq (desktop) {
-    left: 16;
+    left: 38;
   }
 }
 
@@ -83,11 +78,11 @@
 position: absolute;
 
 @include mq (tablet) {
-    left: 258;
+    left: 292;
   }
 
   @include mq (desktop) {
-    left: 400;
+    left: 468;
   }
 }
 
@@ -96,11 +91,11 @@ position: absolute;
 position: absolute;
 
 @include mq (tablet) {
-    left: 510;
+    left: 540;
   }
 
   @include mq (desktop) {
-    left: 816;
+    left: 890;
   }
 }
 
@@ -158,10 +153,12 @@ position: absolute;
 
   @include mq(tablet) {
     top: 173;
+    right: 36;
   }
 
   @include mq (desktop) {
-    top: 231px
+    top: 231;
+    right: 80;
     }
 }
 
