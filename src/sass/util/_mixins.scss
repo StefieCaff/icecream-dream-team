@@ -72,14 +72,11 @@
   }
 }
 
-@mixin productImg ($background-image1x, $background-image2x, $width, $height) {
+@mixin productImg ($background-image1x, $background-image2x) {
   background-image: $background-image1x;
   // position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
-  width: $width;
-  height: $height;
-  margin-bottom: 20px;
 
     @include mq (retina) {
       background-image: $background-image2x;

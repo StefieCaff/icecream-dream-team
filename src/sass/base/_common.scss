@@ -55,17 +55,6 @@ body {
   background-color: $backgroundColorMain;
  }
 
-.section__label {
-  @include fontFamily(secondary);
-  font-size: $fontSizeMBig;
-  font-weight: $fontWeightLight;
-  color: $lightAccentColor;
-  letter-spacing: 0.04em;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .section__header {
   @include fontFamily(secondary);
   color: $darkAccentColor;
@@ -75,6 +64,40 @@ body {
   font-size: $fontSizeMLargest;
   line-height: 39px;
   letter-spacing: 0.04em;
+  margin-bottom: 8px;
+
+  @include mq (tablet) {
+    font-size: $fontSizeTLargest;
+    line-height: 55px;
+    margin-bottom: 20px;
+  }
+
+  @include mq (desktop) {
+    font-size: $fontSizeDLargest;
+    line-height: 66px;
+  }
+}
+
+.section__label {
+  @include fontFamily(secondary);
+  font-size: $fontSizeMBig;
+  font-weight: $fontWeightLight;
+  color: $lightAccentColor;
+  letter-spacing: 0.04em;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  @include mq (tablet) {
+    font-size: $fontSizeTBig;
+    line-height: 30px;
+  }
+
+  @include mq (desktop) {
+    font-size: $fontSizeDBig;
+    line-height: 34px;
+  }
 }
 
 %animation {
