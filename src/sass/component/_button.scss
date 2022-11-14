@@ -5,13 +5,9 @@
   font-size: $fontSizeMedium;
   font-weight: $fontWeightHeavy;
   line-height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   letter-spacing: 0.06em;
   border-radius: 22px;
   border: none;
-  cursor: pointer;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -55,11 +51,19 @@
     }
 }
 
+.button__icon-modal {
+  fill: $lightestColor;
+  // width: 8px;
+  // height: 8px;
+  margin-left: 8px;
+}
+
 .button__icon-nav {
   margin-left: 12px;
 }
 
-.hero__button {
+.hero__button,
+.button-products {
   @extend %button;
     display: inline-flex;
     padding: 7px;
@@ -139,7 +143,6 @@
   border-radius: 50%;
   border: none;
   margin: 32px 0 40px 0;
-
   @include transition (background-color);
     
     &:hover,
@@ -151,6 +154,21 @@
 .products__icon {
   fill: $darkAccentColor;
   margin-top: 3px;
+}
+
+.icecream__button {
+  background-color: $darkAccentColor;
+  color: $lightestColor;
+  font-size: $fontSizeMain;
+  width: 150px;
+  padding: 15px;
+  margin-left: 150px;
+  @include transition (background-color);
+    
+    &:hover,
+    &:focus {
+      background-color: $hoverLight;
+    }
 }
 
 /* About Button */
