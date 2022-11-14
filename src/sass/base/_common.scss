@@ -48,6 +48,14 @@ img {
   fill: currentColor;
 }
 
+button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 // ice cream styles
 
 body {

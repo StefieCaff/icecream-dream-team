@@ -17,16 +17,14 @@
   }
 }
 
-.icecream__modal {
+.modal {
    display: flex;
    flex-direction: column;
    justify-content: center;
    position: relative;
    max-width: 450px;
-   padding: 40px;
-   background-color: $backgroundAccentLight;
+   padding: 40px 16px;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-   border-radius: 22px;
    transition-property: background-color, box-shadow, border-radius;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -43,4 +41,46 @@
 .is-hidden {
   visibility: hidden;
   opacity: 0;
+}
+
+.icecream__modal {
+  @include productCard ($backgroundAccentLight);
+}
+
+.modal__header {
+  color: $darkAccentColor;
+  @include fontFamily (secondary);
+  font-weight: $fontWeightLight;
+  font-size: $fontSizeTBig;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pro-modal {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.pro-modal__item {
+  margin: 20px 0;
+}
+
+.pro-modal__item:nth-child(2n+1) {
+    margin-right: 20px;
+}
+
+.pro-modal__item-header {
+  color: $lightestColor;
+  text-align: center;
+  font-size: $fontSizeLarge;
+  margin-bottom: 12px;
+}
+
+.pro-modal__item-description {
+  color: $lightestColor;
+//   text-align: center;
 }

@@ -14,8 +14,9 @@
 <symbol id="burger" viewBox="0 0 46 32">
 <path d="M0 5.334v-5.334h48v5.334h-48zM0 18.666h48v-5.332h-48v5.332zM0 32h48v-5.334h-48v5.334z"></path>
 </symbol>
+
 <symbol id="button-arrow" viewBox="0 0 22 32">
-<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.322 3.2l14.973 12.8-14.976 12.8"></path>
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.575 3.2l12.88 12.8-12.88 12.8"></path>
 </symbol>
 <symbol id="products-ellipse" viewBox="0 0 139 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M85.333 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
