@@ -1,3 +1,43 @@
+.container__nav {
+  background-color: $backgroundAccentLight;
+}
+
 .header {
   background-color: $backgroundAccentLight;
+}
+
+.logo {
+  position: relative;
+  fill: $darkAccentColor;
+}
+
+.nav__burger {
+  position: absolute;
+  right: 0;
+  border: none;
+  background-color: transparent;
+
+  @include mq (tablet) {
+    right: 225px;
+  }
+}
+
+.burger--icon {
+  cursor: pointer;
+  fill: $darkAccentColor;
+  @include transition (fill);
+
+  &:hover,
+  &:focus {
+    fill: $lightestColor;
+  }
+
+  @include mq (desktop) {
+    display: none;
+  }
+}
+
+.nav__button {
+  position: absolute;
+  right: 32px;
 }
