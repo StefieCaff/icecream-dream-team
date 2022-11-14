@@ -100,28 +100,57 @@
 
 .hero--advantages__button {
   background-color: $lightestColor;
-  background-image: url(../images/tablet/t-arrow-right18.png);
   height: 18px;
   width: 18px;
   margin-top: 7px;
   border-radius: 50%;
   border: none;
 
+  @include transition (background-color);
+    
+    &:hover,
+    &:focus {
+      background-color: $hoverLight;
+  }
+
   @include mq (desktop) {
-    background-image: url(../images/desktop/d-arrow-right26.png);
     width: 26px;
     height: 26px;
     margin-top: 20px;
   }
 }
 
+.hero--advantages__icon {
+  fill: $darkAccentColor;
+  margin-bottom: 1px;
+
+  @include mq (desktop){
+  width: 8px;
+  height: 8px;
+  margin-left: 1px;
+  margin-bottom: 0px;
+  }
+}
+
 .products__button {
   background-color: $lightestColor;
-  background-image: url(../images/arrow-right-products.png);
   height: 40px;
   width: 40px;
   border-radius: 50%;
   border: none;
+  margin: 32px 0 40px 0;
+
+  @include transition (background-color);
+    
+    &:hover,
+    &:focus {
+      background-color: $hoverLight;
+  }
+}
+
+.products__icon {
+  fill: $darkAccentColor;
+  margin-top: 3px;
 }
 
 /* About Button */

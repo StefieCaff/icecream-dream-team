@@ -183,6 +183,21 @@ position: absolute;
   }
 }
 
-.products__button {
-  margin: 32px 0 40px 0;
-}
+// .products__wrapper {
+//   position: relative;
+//   overflow: hidden;
+//   transition-property: transform;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .products__overlay {
+//   position: absolute;
+//   color: $lightestColor;
+//   background-color: rgba(33, 150, 243, 0.9);
+//   transform: translateY(294px);
+//   transition-property: transform;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// }
