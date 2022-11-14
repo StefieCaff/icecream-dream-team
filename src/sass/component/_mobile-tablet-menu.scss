@@ -8,7 +8,7 @@
   width: 250px;
   height: 100vh;
   background-color: $backgroundAccentDark;
-  z-index: 1;
+  z-index: 5;
   transform: translateX(100%);
   transition-property: transform;
   transition-duration: 250ms;
@@ -43,5 +43,15 @@
     &:hover,
     &:focus {
       color: $darkAccentColor;
+    }
+}
+
+.button-close__icon {
+  fill: $lightestColor;
+  @include transition(fill);
+  
+    &:hover,
+    &:focus {
+      fill: $darkAccentColor;
     }
 }
