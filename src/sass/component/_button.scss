@@ -160,9 +160,10 @@
   background-color: $darkAccentColor;
   color: $lightestColor;
   font-size: $fontSizeMain;
-  width: 150px;
+  width: 140px;
   padding: 15px;
-  margin-left: 150px;
+  margin-left: 45px;
+  margin-top: 25px;
   @include transition (background-color);
     
     &:hover,
