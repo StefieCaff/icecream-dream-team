@@ -4,8 +4,8 @@
   const mobileMenu = document.querySelector('.js-mobile-tablet-menu');
   
 
-  //mobile menu hamburger open button
-  const openMenuBtn = document.querySelector('.js-hamburger-open');
+  //mobile menu burger open button
+  const openMenuBtn = document.querySelector('.js-burger-open');
 
   //mobile menu cross close button
   const closeMenuBtn = document.querySelector('.js-cross-close');

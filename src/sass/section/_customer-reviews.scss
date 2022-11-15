@@ -36,10 +36,10 @@
     position: relative;
     background-color: #fafafa;
     padding: 43px 50px 17px 50px;
-    z-index: 999;
+    z-index: 3;
   
     @include mq(tablet-only) {
-      background-color: transparent;
+      // background-color: transparent;
       padding: 37px 6px 36px 6px;
     }
   
