@@ -1,32 +1,82 @@
 .about__section {
-    background-color: #FFF5F6;
+    background-color: $backgroundColorSecondary;
+    
+    @media screen and (min-width:1280px) {
+            display: flex;
+            flex-direction: column;
+        }
+
 }
 .about {
     min-width: 320px;
 }
 
+.about__text {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .about__paragraph-one {
-    color: #000000;
-    font-size: 12px;
+    color: $darkestColor;
+    font-size: $fontSizeSmall;
+    font-weight: 500;
+    line-height: 19.44px;
+    font-style: 'DM Sans';
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 80px;
 
 @media screen and (min-width:768px) {
-            font-size: 14px;
+        font-size: $fontSizeMain;
         }
     
 @media screen and (min-width:1280px) {
-            font-size: 16px;
+            font-size: $fontSizeMedium;
         }
 }
 
 .about__paragraph-two {
+    color: $fontColorAccentLight;
+    font-size: $fontSizeSmall;
+    font-style: 'DM Sans';
+    line-height: 19.44px;
     color: #907E82;
-    font-size: 12px;
+    margin-bottom: 20px;
+    margin-right: 80px;
 
     @media screen and (min-width:768px) {
-        font-size: 14px;
+        font-size: $fontSizeMain;
     }
 
     @media screen and (min-width:1280px) {
-        font-size: 14px;
+        font-size: $fontSizeMain;
     }
+}
+
+.about__milk-image {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/mobile/m-milk.png);
+
+    transform-style: preserve-3d;
+    width: 280px;
+    height: 133px;
+    left: 20px;
+    top: 3183px;
+
+    @include mq(desktop) {
+            position: absolute;
+            background-image: url(../images/desktop/d-milk.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1200px;
+            height: 521px;
+            left: 0px;
+            right: 0px;
+            top: 1953px;
+        }
+
+
 }
