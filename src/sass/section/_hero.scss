@@ -44,7 +44,8 @@
 }
 
 .hero__heading {
-  @include fontFamily(secondary);
+  // @include fontFamily(secondary);
+  font-family: $title-font;
   font-weight: $fontWeightLight;
   font-size: 26px;
   line-height: 30px;
