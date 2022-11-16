@@ -1,28 +1,53 @@
 .about__section {
-    background-color: $backgroundColorSecondary;
+    background-color: $backgroundColorSecondary;   
+}
+
+.about__container {
     
-    @media screen and (min-width:1280px) {
-            display: flex;
-            flex-direction: column;
+    @media screen and (min-width:768px) {
+        display: inline-block;
         }
 
+    @media screen and (min-width:1280px) {
+        display: inline-block;
+
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
 }
+
 .about {
     min-width: 320px;
+          
 }
 
 .about__text {
     display: flex;
     flex-direction: column;
+    
+    @media screen and (min-width:768px) {
+        min-width: 334px;
+    }
+        
+            @media screen and (min-width:1280px) {
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                margin-left: 50px;
+                width: 400px;
+                position: relative;
+            }
 
 }
 
 .about__paragraph-one {
     color: $darkestColor;
     font-size: $fontSizeSmall;
-    font-weight: 500;
+    font-weight: $fontWeightMed;
     line-height: 19.44px;
-    font-style: 'DM Sans';
+    font-style: $pr-font;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 80px;
@@ -39,9 +64,9 @@
 .about__paragraph-two {
     color: $fontColorAccentLight;
     font-size: $fontSizeSmall;
-    font-style: 'DM Sans';
+    font-style: $pr-font;
     line-height: 19.44px;
-    color: #907E82;
+    color: $sec-text-color;
     margin-bottom: 20px;
     margin-right: 80px;
 
@@ -54,28 +79,48 @@
     }
 }
 
+.about__image {
+
+    @media screen and (min-width:768px) {
+            width: 501px;
+            height: auto;
+        
+        }
+
+    @media screen and (min-width:1280px) {
+        float: left;
+        width: 501px;
+        height: auto; 
+    }
+    
+}
+
 .about__milk-image {
     position: absolute;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(../images/mobile/m-milk.png);
 
-    transform-style: preserve-3d;
+
     width: 280px;
     height: 133px;
-    left: 20px;
+
     top: 3183px;
+    padding: 0 0;
 
     @include mq(desktop) {
             position: absolute;
             background-image: url(../images/desktop/d-milk.png);
             background-size: cover;
             background-repeat: no-repeat;
+      
+
             width: 1200px;
             height: 521px;
             left: 0px;
             right: 0px;
             top: 1953px;
+            padding: 0 0;
         }
 
 
