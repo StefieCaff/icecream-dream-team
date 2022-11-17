@@ -46,3 +46,41 @@
 .buy__modal {
   background-color: #e1e1e1;
 }
+
+.modal__header {
+    color: $darkAccentColor;
+    @include fontFamily (secondary);
+    font-weight: $fontWeightLight;
+    font-size: $fontSizeTBig;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.pro-modal {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.pro-modal__item {
+    margin: 20px 0;
+}
+
+.pro-modal__item:nth-child(2n+1) {
+    margin-right: 20px;
+}
+
+.pro-modal__item-header {
+    color: $lightestColor;
+    text-align: center;
+    font-size: $fontSizeLarge;
+    margin-bottom: 12px;
+}
+
+.pro-modal__item-description {
+    color: $lightestColor;
+    text-align: center;
+}
