@@ -102,11 +102,13 @@ position: absolute;
 .products__img {
   width: 280px;
   height: 280px;
+  margin-top: 8px;
   
   @include mq(tablet) {
     width: 224px;
     height: 224px;
     margin-bottom: 32px;
+    margin-top: 20px;
   }
 
   @include mq(desktop) {
