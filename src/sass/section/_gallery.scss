@@ -1,30 +1,33 @@
 .section__gallery {
    background: $gradientBackground;
-     
+    
+   @include mq(desktop){
+        padding: 60px 0;
+   }
 }
-.gallery {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
+// .gallery {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+// }
 
 
-.gallery__image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+// .gallery__image {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
 
-    @media screen and (min-width:768px) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    }
+//     @media screen and (min-width:768px) {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//     }
 
-    @media screen and (min-width:1280px) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+//     @media screen and (min-width:1280px) {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
            
-    }
+//     }
 
-}
+// }
