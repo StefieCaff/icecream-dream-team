@@ -1,5 +1,10 @@
 .about__section {
     background-color: $backgroundColorSecondary;   
+    padding-bottom: 40px;
+
+    @include mq (tablet){
+      padding-bottom: 60px;
+    }
 }
 
 .about__container {
