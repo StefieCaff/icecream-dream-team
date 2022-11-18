@@ -196,7 +196,7 @@ textarea {
 .modal__checkbox-input {
     appearance: none;
     &:focus+.modal__checkbox-icon {
-        border-color: $darkAccentColor);
+        border-color: $darkAccentColor;
     }
     &:checked+.modal__checkbox-icon {
         background-origin: border-box;

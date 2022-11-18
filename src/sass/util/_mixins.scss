@@ -1,14 +1,3 @@
-@mixin fontFamily($family) {
-  $main: 'DM Sans', sans-serif;
-  $secondary: 'Titan One';
-  @if $family == 'main' {
-    font-family: $main;
-  }
-  @if $family == 'secondary' {
-    font-family: $secondary;
-  }
-}
-
 @mixin transition($properties...) {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
