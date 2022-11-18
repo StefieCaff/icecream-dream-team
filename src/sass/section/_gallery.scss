@@ -1,27 +1,31 @@
 .section__gallery {
    background: $gradientBackground;
-    
+   padding: 0 0;
+
+   
    @include mq(desktop){
         padding: 60px 0;
+
    }
 }
 
-.gallery__image {
-   @include productImg (url(../images/mobile/m-gallery.png), url(../images/mobile/m-gallery-2x.png));
 
-}
+// .gallery__image {
+//   @include productImg (url(../images/mobile/m-gallery.png), url(../images/mobile/m-gallery-2x.png));
 
-.gallery__image {
-   @include productImg (url(../images/tablet/t-gallery.png), url(../images/tablet/t-gallery-2x.png));
+//}
+
+//.gallery__image {
+//   @include productImg (url(../images/tablet/t-gallery.png), url(../images/tablet/t-gallery-2x.png));
  
   
-}
+//}
 
-.gallery__image {
-   @include productImg (url(../images/desktop/d-gallery.png), url(../images/desktop/d-gallery-2x.png));
+//.gallery__image {
+//   @include productImg (url(../images/desktop/d-gallery.png), url(../images/desktop/d-gallery-2x.png));
 
 
-}
+//}
 
 // .gallery {
 //         display: flex;
