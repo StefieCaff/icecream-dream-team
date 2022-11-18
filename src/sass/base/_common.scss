@@ -59,7 +59,7 @@ button {
 // ice cream styles
 
 body {
-  @include fontFamily (main);
+  font-family: $pr-font;
   font-style: $fontStyle;
   color: $darkestColor;
   font-size: $fontSizeMain;
@@ -68,7 +68,7 @@ body {
  }
 
 .section__header {
-  @include fontFamily(secondary);
+  font-family: $title-font;
   color: $darkAccentColor;
   text-align: center;
   text-transform: uppercase;
@@ -89,7 +89,7 @@ body {
 }
 
 .section__label {
-  @include fontFamily(secondary);
+  font-family: $title-font;
   font-size: $fontSizeMBig;
   font-weight: $fontWeightLight;
   color: $lightAccentColor;

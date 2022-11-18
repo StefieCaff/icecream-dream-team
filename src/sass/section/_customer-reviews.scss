@@ -97,8 +97,8 @@
       to bottom,
       transparent,
       transparent 30px,
-      #e1e1e1 1px,
-      #e1e1e1 31px
+      $accentColorShade 1px,
+      $accentColorShade 31px
     );
     @media screen and (min-width: 480px) {
       width: 180px;
@@ -114,11 +114,11 @@
   }
   
   .reviews__content {
-    font-family: var(--pr-font);
-    font-weight: var(--primary-fw);
+    font-family: $pr-font;
+    font-weight: $fontWeightMed;
     font-size: 12px;
     line-height: 2.58;
-    color: var(--pr-text-color);
+    color: $darkestColor;
     
     @media screen and (min-width: 480px) {
       width: 157px;
@@ -141,12 +141,12 @@
     margin-top: 36px;
     margin-bottom: 22px;
   
-    font-family: var(--pr-font);
-    font-weight: var(--primary-fw);
-    font-size: var(--primary-fz);
+    font-family: $pr-font;
+    font-weight: $fontWeightMed;
+    font-size: $fontSizeMain;
     line-height: 1.86;
   
-    color: var(--pr-text-color);
+    color: $darkestColor;
   
     @include mq(tablet-only) {
       margin-top: 24px;

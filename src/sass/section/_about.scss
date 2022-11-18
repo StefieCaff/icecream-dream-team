@@ -102,7 +102,7 @@
     font-size: $fontSizeSmall;
     font-style: $pr-font;
     line-height: 19.44px;
-    color: $sec-text-color;
+    color: $fontColorAccentLight;
     margin-bottom: 20px;
     margin-right: 80px;
     position: relative;
@@ -168,7 +168,7 @@
     height: auto; 
 
 }
-
+}
 // .about__milk-image {
 //     position: absolute;
 //     background-repeat: no-repeat;
@@ -176,11 +176,11 @@
 //     background-image: url(../images/mobile/m-milk.png);
 
 
-    width: 280px;
-    height: 133px;
+    // width: 280px;
+    // height: 133px;
 
-    top: 3075px;
-    padding: 0 0;
+    // top: 3075px;
+    // padding: 0 0;
 
 
 //     width: 280px;
@@ -206,4 +206,3 @@
 
 
 // }
-}

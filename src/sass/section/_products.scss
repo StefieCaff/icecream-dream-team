@@ -121,7 +121,7 @@ position: absolute;
   padding-top: 160px;
   margin-bottom: 64px;
   color: $lightestColor;
-  @include fontFamily (secondary);
+  font-family: $title-font;
   font-weight: $fontWeightLight;
   font-size: fontSizeLarge;
   line-height: 23px;
@@ -165,7 +165,7 @@ position: absolute;
 }
 
 .products__description {
-  @include fontFamily (main);
+  font-family: $pr-font;
   color: $lightestColor;
   font-weight: $fontWeightHeavy;
   font-size: $fontSizeMain;
