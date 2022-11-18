@@ -73,7 +73,19 @@
 }
 
 .about__paragraph-one {
+
+    color: $darkestColor;
+    font-size: $fontSizeSmall;
+    font-weight: $fontWeightMed;
+    line-height: 19.44px;
+    font-style: $pr-font;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 80px;
+    position: relative;
+
   margin-top: 40px;
+
 
  //@include mq (tablet) {
 //    margin-right: 32px;
@@ -85,7 +97,21 @@
 }
 
 .about__paragraph-two {
-    // display: table;
+
+    color: $fontColorAccentLight;
+    font-size: $fontSizeSmall;
+    font-style: $pr-font;
+    line-height: 19.44px;
+    color: $sec-text-color;
+    margin-bottom: 20px;
+    margin-right: 80px;
+    position: relative;
+
+    @media screen and (min-width:768px) {
+        font-size: $fontSizeMain;
+    }
+
+   
   color: $fontColorAccentLight;
   margin-top: 40px;
 
@@ -97,6 +123,34 @@
 }
 
 .about__image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 40px;
+        background-image: url(../images/mobile/m-cow-milk.png);
+    
+        width: 280px;
+        height: 279px;
+
+        @include mq(tablet) {
+            background-image: url(../images/tablet/t-cow-milk.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+                    width: 501px;
+                        height: auto;
+        }
+    
+        @include mq(desktop) {
+            background-image: url(../images/desktop/d-cow-milk.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+    
+            float: left;
+            width: 501px;
+            height: auto;
+        }
+
+    
+
   margin-top: 32px;
   width: 280px;
   height: auto;
@@ -112,7 +166,7 @@
     margin-top: 60px;
     width: 501px;
     height: auto; 
-    }
+
 }
 
 // .about__milk-image {
@@ -120,6 +174,13 @@
 //     background-repeat: no-repeat;
 //     background-size: cover;
 //     background-image: url(../images/mobile/m-milk.png);
+
+
+    width: 280px;
+    height: 133px;
+
+    top: 3075px;
+    padding: 0 0;
 
 
 //     width: 280px;
