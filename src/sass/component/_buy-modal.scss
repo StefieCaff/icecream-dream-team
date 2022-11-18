@@ -44,12 +44,12 @@
 }
 
 .buy__modal {
-  background-color: #e1e1e1;
+  background-color: $accentColorShade;
 }
 
 .modal__header {
     color: $darkAccentColor;
-    @include fontFamily (secondary);
+    font-family: $title-font;
     font-weight: $fontWeightLight;
     font-size: $fontSizeTBig;
     line-height: 23px;

@@ -49,7 +49,7 @@
 
 .modal__header {
   color: $darkAccentColor;
-  @include fontFamily (secondary);
+  font-family: $title-font;
   font-weight: $fontWeightLight;
   font-size: $fontSizeTBig;
   line-height: 23px;

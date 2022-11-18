@@ -1,5 +1,5 @@
 %button {
-  font-family: 'DM Sans', sans-serif;
+  font-family: $pr-font;
   background-color: $lightestColor;
   color: $darkAccentColor;
   font-size: $fontSizeMedium;
@@ -173,15 +173,15 @@
 
 /* About Button */
 .button-about {
-    background-color: #FFFFFF;
+    background-color: $lightestColor;
     border: none;
     border-radius: 22px;
   
     width: 176px;
     height: 44px;
-    font-size: 14px;
+    font-size: $fontSizeMain;
     font-weight: 700;
-    color: #D41443;
+    color: $darkAccentColor;
     line-height: 18px;
 
     display: flex;

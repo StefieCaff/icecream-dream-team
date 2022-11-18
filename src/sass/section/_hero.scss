@@ -44,7 +44,6 @@
 }
 
 .hero__heading {
-  // @include fontFamily(secondary);
   font-family: $title-font;
   font-weight: $fontWeightLight;
   font-size: 26px;
@@ -225,7 +224,7 @@
 
 .hero--contacts__item {
   transform-style: preserve-3d;
-  @include fontFamily(secondary);
+  font-family: $title-font;
   font-weight: $fontWeightLight;
   font-size: 28px;
   line-height: 32px;

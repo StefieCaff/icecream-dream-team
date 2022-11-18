@@ -3,12 +3,12 @@
     padding-bottom: 3px;
     &-wrap {
       padding-bottom: 40px;
-      border-bottom: var(--border-line);
+      border-bottom: $border-line;
       margin-bottom: 16px;
     }
     &__text {
       width: 232px;
-      font-family: var(--title-font);
+      font-family: $title-font;
       text-transform: uppercase;
       margin-bottom: 40px;
     }
@@ -41,29 +41,29 @@
       width: 32px;
       height: 32px;
       border-radius: 50%;
-      background-color: var(--soc-bg-color);
+      background-color: $soc-bg-color;
       @include transition(background-color);
       &:hover {
-        background-color: var(--sec-accent-color);
+        background-color: $darkAccentColor;
       }
     }
     &__social-icon {
       display: block;
-      fill: var(--pr-white-color);
+      fill: $lightestColor;
     }
     &__tel {
-      @include font(12px, 700, 1.86, null);
-      font-family: var(--pr-font);
-      color: var(--sec-accent-color);
+      @include font($fontSizeSmall, $fontWeightHeavy, 1.86, null);
+      font-family: $pr-font;
+      color: $darkAccentColor;
     }
     &__tel--text {
-      color: var(--pr-text-color);
+      color: $darkestColor;
     }
     &-copyright {
-      @include font(14px, 700, 1.52, null);
+      @include font($fontSizeMain, $fontWeightHeavy, 1.52, null);
       text-align: center;
-      font-family: var(--pr-font);
-      color: var(--sec-text-color);
+      font-family: $pr-font;
+      color: $fontColorAccentLight;
       width: 180px;
     }
   }
@@ -89,10 +89,10 @@
         margin-top: 60px;
       }
       &__tel {
-        @include font(14px, 700, 1.86, null);
+        @include font($fontSizeMain, $fontWeightHeavy, 1.86, null);
       }
       &-copyright {
-        @include font(14px, 700, 1.86, 0.02em);
+        @include font($fontSizeMain, $fontWeightHeavy, 1.86, 0.02em);
         width: 100%;
       }
     }
@@ -113,7 +113,7 @@
         justify-content: end;
       }
       &__tel {
-        @include font(16px, 700, 1.86, 0.02em);
+        @include font($fontSizeMedium, $fontWeightHeavy, 1.86, 0.02em);
       }
     }
   }

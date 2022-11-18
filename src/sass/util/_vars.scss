@@ -55,14 +55,20 @@ $backgroundColorSecondary: #FFF5F6;            //light pink variation
 
 // Extra Background Accent colors
 $backgroundAccentDark: #E17992;
-$backgroundAccentLight: #FFBBCA;
+$backgroundAccentLight: #FFB8CA;
 $backgroundAccentExtra: #F0D1A5;             //lightyellow
-$backgroundAccentOther: #C2E297;             //lightgreen
-// Other Important Variables
+$backgroundAccentOther: #C2E297;
+$accentColorShade: #e1e1e1;             //lightgreen
 
+// Other Important Variables
 $soc-bg-color: #fea5bb;
 $border-line: 1px solid #e1e1e1;
+
+
+
 $border-mb-menu: 1px solid #e18298;
-$bg-cl-mb-menu: #e17992;
-$burger-btn-accent-cl: #7c0c28;
-$reviews-icon-fill:#D31342
+//$bg-cl-mb-menu: #e17992;
+//$burger-btn-accent-cl: #7c0c28;
+//$reviews-icon-fill:#D31342;
+
+$gradientBackground: linear-gradient(180deg, rgba(255, 245, 246, 1) 35%, rgba(229, 229, 229, 1) 35%);
