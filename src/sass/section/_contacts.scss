@@ -1,10 +1,10 @@
 .contacts {
-    background-image: linear-gradient($lightAccentColor 23%, $backgroundColorSecondary 23%);
+    background-image: linear-gradient(#E5E5E5 23%, #fff5f6 23%);
     @include mq(tablet) {
-        background-image: linear-gradient($lightAccentColor 39%, $backgroundColorSecondary 39%);
+    background-image: linear-gradient(#E5E5E5 39%, #fff5f6 39%);
     }
     @include mq(desktop) {
-        background-image: linear-gradient($lightAccentColor 20%, $backgroundColorSecondary 20%);
+    background-image: linear-gradient(#E5E5E5 20%, #fff5f6 20%);
     }
 }
 
@@ -98,6 +98,22 @@
     color: $darkAccentColor;
 }
 
+.btn {
+  font-size: $fontSizeMedium;
+  font-weight: $fontWeightHeavy;
+  line-height: 21px;
+  border-radius: 22px;
+  padding: 9px 0;
+  
+  @include mq(tablet) {
+        padding: 9px 30px;
+  }
+
+  @include mq(desktop) {
+  padding: 13px 40px;
+  }
+}
+
 .btn-list {
     display: flex;
     flex-direction: column;
@@ -125,12 +141,11 @@
 }
 
 .btn-list__btn {
+    background-color: $lightestColor;
+    color: $darkAccentColor;
     @include transition(transform, background-color, color);
     @include mq(mobile-only) {
-        min-width: 190px;
-    }
-    @include mq(tablet) {
-        padding: 10px 37px;
+        min-width: 162px;
     }
 }
 
@@ -145,7 +160,7 @@
     background-color: $darkAccentColor;
     &:hover,
     &:focus {
-        background: $lightestColor;
+        background: $hoverLight;
         color: $darkAccentColor;
     }
 }

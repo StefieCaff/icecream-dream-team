@@ -8,6 +8,7 @@
   letter-spacing: 0.06em;
   border-radius: 22px;
   border: none;
+  // animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s infinite alternate both;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
