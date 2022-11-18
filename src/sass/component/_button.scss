@@ -181,16 +181,15 @@
     height: 44px;
     font-size: 14px;
     font-weight: 700;
-    margin-left: 20px;
-
+    color: #D41443;
     line-height: 18px;
 
     display: flex;
     text-align: center;
     justify-content: center;
- 
-    color: #D41443;
-    padding: 11px 19px 10px 20px;
+    
+    margin-top: 20px;
+    padding: 10px 20px;
 
     @include transition (background-color);
       &:hover,
@@ -198,11 +197,12 @@
         background-color: $hoverLight;
       }
     @include mq (tablet) {
-        margin-left: 400px;
+      margin-top: 40px;
+        // margin-left: 400px;
     }
 
     @include mq (desktop) {
-        margin-left: 616px;
+        // margin-left: 616px;
     }
 
     &__svg {
