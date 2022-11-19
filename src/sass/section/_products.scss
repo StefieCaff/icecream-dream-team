@@ -61,7 +61,7 @@
 }
 
 .products__img--cone {
-  @include productImg (url(../images/mobile/m-cone280.png), url(../images/mobile/m-cone560.png));  
+  @include backgroundImg (url(../images/mobile/m-cone280.png), url(../images/mobile/m-cone560.png));  
   position: absolute;
 
   @include mq (tablet) {
@@ -74,7 +74,7 @@
 }
 
 .products__img--coffee {
-  @include productImg (url(../images/tablet/t-coffee224.png), url(../images/tablet/t-coffee448.png));
+  @include backgroundImg (url(../images/tablet/t-coffee224.png), url(../images/tablet/t-coffee448.png));
 position: absolute;
 
 @include mq (tablet) {
@@ -87,7 +87,7 @@ position: absolute;
 }
 
 .products__img--milkshake {
-@include productImg (url(../images/desktop/d-milkshake368.png), url(../images/desktop/d-milkshake736.png));
+@include backgroundImg (url(../images/desktop/d-milkshake368.png), url(../images/desktop/d-milkshake736.png));
 position: absolute;
 
 @include mq (tablet) {
@@ -184,22 +184,3 @@ position: absolute;
     padding: 0px 64px;
   }
 }
-
-// .products__wrapper {
-//   position: relative;
-//   overflow: hidden;
-//   transition-property: transform;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// .products__overlay {
-//   position: absolute;
-//   color: $lightestColor;
-//   background-color: rgba(33, 150, 243, 0.9);
-//   transform: translateY(294px);
-//   transition-property: transform;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-// }
