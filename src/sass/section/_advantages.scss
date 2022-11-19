@@ -85,7 +85,7 @@
 }
 
 .advantages__img-cow {
-    @include productImg (url(../images/mobile/d-milk-cow.png), url(../images/pngs/cow-milk-2x.png));
+    @include backgroundImg (url(../images/mobile/d-milk-cow.png), url(../images/pngs/cow-milk-2x.png));
 
     @include mq (tablet) {
         left: 50;
@@ -97,7 +97,7 @@
 }
 
 .advantages__img-fruits {
-    @include productImg (url(../images/mobile/d-fruits.png), url(../images/pngs/fruits-2x.png));
+    @include backgroundImg (url(../images/mobile/d-fruits.png), url(../images/pngs/fruits-2x.png));
 
 
     @include mq (tablet) {
@@ -110,7 +110,7 @@
 }
 
 .advantages__img-heart {
-    @include productImg (url(../images/mobile/heart.png), url(../images/pngs/heart-2x.png));
+    @include backgroundImg (url(../images/mobile/heart.png), url(../images/pngs/heart-2x.png));
   
 
     @include mq (tablet) {

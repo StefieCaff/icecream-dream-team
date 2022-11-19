@@ -61,7 +61,7 @@
   }
 }
 
-@mixin productImg ($background-image1x, $background-image2x) {
+@mixin backgroundImg ($background-image1x, $background-image2x) {
   background-image: $background-image1x;
   // position: absolute;
   background-size: contain;
