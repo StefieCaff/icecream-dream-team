@@ -2,10 +2,7 @@
   font-family: $pr-font;
   background-color: $lightestColor;
   color: $darkAccentColor;
-  font-size: $fontSizeMedium;
-  font-weight: $fontWeightHeavy;
-  line-height: 18px;
-  letter-spacing: 0.06em;
+  @include font($fontSizeMedium, $fontWeightHeavy, 18px, 0.06em);
   border-radius: 22px;
   border: none;
   // animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s infinite alternate both;
@@ -43,7 +40,8 @@
   }
 }
 
-.button__icon-menu {
+.button__icon-menu,
+.button-about__svg {
     fill: currentColor;
     margin-left: 15px;
 
@@ -53,7 +51,7 @@
 }
 
 .button__icon-modal {
-  fill: $lightestColor;
+  fill: currentColor;
   // width: 8px;
   // height: 8px;
   margin-left: 8px;
@@ -173,44 +171,51 @@
 }
 
 /* About Button */
-.button-about {
-    background-color: $lightestColor;
-    border: none;
-    border-radius: 22px;
+// .button-about {
+//     background-color: $lightestColor;
+//     border: none;
+//     border-radius: 22px;
   
-    width: 176px;
-    height: 44px;
-    font-size: $fontSizeMain;
-    font-weight: 700;
-    color: $darkAccentColor;
-    line-height: 18px;
+//     width: 176px;
+//     height: 44px;
+//     font-size: $fontSizeMain;
+//     font-weight: 700;
+//     color: $darkAccentColor;
+//     line-height: 18px;
 
-    display: flex;
-    text-align: center;
-    justify-content: center;
+//     display: flex;
+//     text-align: center;
+//     justify-content: center;
     
-    margin-top: 20px;
-    padding: 10px 20px;
+//     margin-top: 20px;
+//     padding: 10px 20px;
 
-    @include transition (background-color);
-      &:hover,
-      &:focus {
-        background-color: $hoverLight;
-      }
-    @include mq (tablet) {
-      margin-top: 40px;
-        // margin-left: 400px;
-    }
+//     @include transition (background-color);
+//       &:hover,
+//       &:focus {
+//         background-color: $hoverLight;
+//       }
+//     @include mq (tablet) {
+//       margin-top: 40px;
+//         // margin-left: 400px;
+//     }
 
-    @include mq (desktop) {
-        // margin-left: 616px;
-    }
+//     @include mq (desktop) {
+//         // margin-left: 616px;
+//     }
 
-    &__svg {
-      fill: red;
-      border: 2px;
-      margin-left: 13px;
-      margin-top: 6px;
-    }
+//     &__svg {
+//       fill: red;
+//       border: 2px;
+//       margin-left: 13px;
+//       margin-top: 6px;
+//     }
 
+// }
+
+.button-about {
+  @extend %button;
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 176px;
 }
