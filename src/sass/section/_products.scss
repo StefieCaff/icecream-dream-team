@@ -1,11 +1,8 @@
-.products-container {
-  position: relative;
-}
-
 .products {
   @include mq (tablet) {
     display: flex;
   }
+
 }
 
 .products__item {
@@ -42,14 +39,6 @@
 
 .products__card--cone {
   @include productCard ($backgroundAccentLight);
-
-  @include mq (tablet) {
-    margin-left: 32px;
-  }
-
-  @include mq (desktop) {
-    margin-left: 0px;
-  }
 }
 
 .products__card--coffee{
@@ -65,7 +54,7 @@
   position: absolute;
 
   @include mq (tablet) {
-    left: 50;
+    left: 32;
   }
 
   @include mq (desktop) {
@@ -78,7 +67,7 @@
 position: absolute;
 
 @include mq (tablet) {
-    left: 292;
+    left: 272;
   }
 
   @include mq (desktop) {
@@ -91,7 +80,7 @@ position: absolute;
 position: absolute;
 
 @include mq (tablet) {
-    left: 540;
+    left: 526;
   }
 
   @include mq (desktop) {

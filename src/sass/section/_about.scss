@@ -174,11 +174,8 @@
 //     background-repeat: no-repeat;
 //     background-size: cover;
 //     background-image: url(../images/mobile/m-milk.png);
-
-
     // width: 280px;
     // height: 133px;
-
     // top: 3075px;
     // padding: 0 0;
 
@@ -190,19 +187,135 @@
 //     padding: 0 0;
 
 //     @include mq(desktop) {
-//             position: absolute;
-//             background-image: url(../images/desktop/d-milk.png);
-//             background-size: cover;
-//             background-repeat: no-repeat;
+//     position: absolute;
+//     background-image: url(../images/desktop/d-milk.png);
+//     background-size: cover;
+//     background-repeat: no-repeat;
       
 
-//             width: 1200px;
-//             height: 521px;
-//             left: 0px;
-//             right: 0px;
-//             top: 1953px;
-//             padding: 0 0;
-//         }
+//     width: 1200px;
+//     height: 521px;
+//     left: 0px;
+//     right: 0px;
+//     top: 1953px;
+//     padding: 0 0;
+// }
 
 
+// }
+
+
+
+
+
+
+
+
+
+// .PRETTY PLEASE  DO NOT CHANGE CODE BELOW THIS LINE 
+
+
+//About Section practice --
+
+
+
+// .about {
+//   background-color: $backgroundColorSecondary;
+//   padding-bottom: 40px;
+// }
+
+// .about__container{
+//   position: relative;
+// }
+
+// .about__wrapper--right {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .about__wrapper {
+  
+//   @include mq (tablet) {
+//   display: flex;
+//   }
+// }
+
+// .about__text {
+//   @include font($fontSizeMain, $fontWeightMed, 25px, 0.04em);
+//   margin-top: 40px;
+//   text-align: left;
+//   position: relative;
+//   margin-right: 80px;
+  
+//   @include mq (tablet) {
+//     width: 334px;
+//     margin-right: 0px;
+//   }
+
+//   @include mq (desktop) {
+//     font-size: $fontSizeMedium;
+//     width: 463px;
+//   }
+// }
+
+// .about__paragraph-one {
+//   @include mq (desktop) {
+//     margin-top: 150px;
+//   }
+// }
+
+// .about__paragraph-two {
+//   color: $fontColorAccentLight;
+// }
+
+// .about__img {
+//   @include backgroundImg (url(../images/mobile/m-cow-milk.png), url(../images/mobile/m-cow-milk.png));
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   width: 280px;
+//   height: 280px;
+//   // position: relative;
+//   margin-top: 32px;
+
+//     @include mq (tablet) {
+//       @include backgroundImg (url(../images/tablet/t-cow-milk.png), url(../images/tablet/t-cow-milk.png));
+//       width: 336px;
+//       height: 336px;
+//       margin-top: 40px;
+//       margin-right: 32px;
+//     }
+
+//   @include mq (desktop) {
+//     @include backgroundImg (url(../images/desktop/d-cow-milk.png), url(../images/desktop/d-cow-milk.png));
+//       width: 501px;
+//       height: 501px;
+//       margin-right: 100px;
+//   }
+// }
+
+// .about__img-background {
+//   @include backgroundImg (url(../images/mobile/m-milk.png), url(../images/mobile/m-milk.png));
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   position: absolute;
+//   z-index: 0;
+//   top: 514;
+//   min-width: 280px;
+//   height: 133px;
+
+//   @include mq (tablet) {
+//     background-image: none;
+//   }
+
+//   @include mq (desktop) {
+//     @include backgroundImg (url(../images/desktop/d-milk.png), url(../images/desktop/d-milk.png));
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     position: absolute;
+//     width: 100vw;
+//     height: 521px;
+//     top: 166;
+//     left: 0;
+//   }
 // }
