@@ -42,7 +42,6 @@
 
 .button__icon-menu,
 .button-about__svg {
-    fill: currentColor;
     margin-left: 15px;
 
     @include mq (tablet) {
@@ -51,9 +50,6 @@
 }
 
 .button__icon-modal {
-  fill: currentColor;
-  // width: 8px;
-  // height: 8px;
   margin-left: 8px;
 }
 
@@ -103,6 +99,7 @@
 
 .hero--advantages__button {
   background-color: $lightestColor;
+  color: $lightestColor;
   height: 18px;
   width: 18px;
   margin-top: 7px;
@@ -123,7 +120,6 @@
 }
 
 .hero--advantages__icon {
-  fill: $darkAccentColor;
   margin-bottom: 1px;
 
   @include mq (desktop){
@@ -136,6 +132,7 @@
 
 .products__button {
   background-color: $lightestColor;
+  color: $lightestColor;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -150,7 +147,6 @@
 }
 
 .products__icon {
-  fill: $darkAccentColor;
   margin-top: 3px;
 }
 

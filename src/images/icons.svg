@@ -1,3 +1,4 @@
+<!-- header/hero/products icons -->
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="logo" viewBox="0 0 127 32">
@@ -12,12 +13,6 @@
 <symbol id="burger" viewBox="0 0 46 32">
 <path d="M0 5.334v-5.334h48v5.334h-48zM0 18.666h48v-5.332h-48v5.332zM0 32h48v-5.334h-48v5.334z"></path>
 </symbol>
-<symbol id="button-arrow-light" viewBox="0 0 26 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8"></path>
-</symbol>
-<symbol id="button-arrow" viewBox="0 0 22 32">
-<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.575 3.2l12.88 12.8-12.88 12.8"></path>
-</symbol>
 <symbol id="products-ellipse" viewBox="0 0 139 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M85.333 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
@@ -26,14 +21,14 @@
 <symbol id="arrow-right" viewBox="0 0 32 32">
 <path d="M0 15.999c0.003 1.749 1.421 3.166 3.17 3.168l18.011-0.002-4.868 4.869c-1.318 1.319-1.386 3.392-0.149 4.631 1.238 1.234 3.311 1.169 4.631-0.15l10.168-10.17c1.322-1.318 1.389-3.392 0.15-4.63-0.034-0.030-0.070-0.052-0.103-0.082-0.042-0.044-0.072-0.097-0.116-0.143l-10.033-10.031c-1.303-1.301-3.36-1.352-4.597-0.114-1.238 1.238-1.185 3.296 0.114 4.599l4.886 4.885h-18.094c-0.001 0-0.001 0-0.002 0-1.75 0-3.168 1.418-3.168 3.168 0 0.001 0 0.001 0 0.002v-0z"></path>
 </symbol>
+<!-- button icons -->
+<symbol id="button-arrow-right" viewBox="0 0 32 32">
+<path d="M10.586 3.272c-0.362 0.362-0.586 0.862-0.586 1.414s0.224 1.052 0.586 1.414l9.9 9.9-9.9 9.9c-0.347 0.359-0.561 0.849-0.561 1.389 0 1.105 0.895 2 2 2 0.54 0 1.030-0.214 1.39-0.562l-0.001 0.001 11.314-11.314c0.362-0.362 0.586-0.862 0.586-1.414s-0.224-1.052-0.586-1.414l-11.314-11.314c-0.362-0.362-0.862-0.586-1.414-0.586s-1.052 0.224-1.414 0.586v0z"></path>
+</symbol>
+<!-- socials and slider house -->
 <symbol id="house" viewBox="0 0 38 32">
 <path d="M37.92 15.328c0.694-0.643 0.627-1.635-0.15-2.211l-17.162-12.691c-0.385-0.266-0.863-0.425-1.377-0.425-0.53 0-1.021 0.169-1.421 0.455l0.007-0.005-17.219 13.344c-0.765 0.589-0.8 1.581-0.083 2.208l0.432 0.384c0.714 0.627 1.872 0.704 2.582 0.163l1.286-0.973v14.262c0 0.874 0.842 1.581 1.875 1.581h6.71c1.037 0 1.875-0.704 1.875-1.581v-9.978h8.56v9.978c-0.013 0.874 0.726 1.581 1.76 1.581h7.114c1.034 0 1.872-0.707 1.872-1.584v-14.058l0.797 0.589c0.435 0.323 1.357 0.064 2.051-0.582l0.49-0.454z"></path>
 </symbol>
-<!--About svgs-->
-<symbol id="about-arrow" viewBox="0 0 26 32">
-<path fill="none"  style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8"></path>
-</symbol>
-<!-- socials and button arrows and slider house -->
 <symbol id="telegram" viewBox="0 0 44 32">
 <path d="M17.344 21.048l-0.676 8.86c0.966 0 1.384-0.388 1.886-0.852l4.526-4.040 9.38 6.414c1.722 0.894 2.934 0.422 3.4-1.478l6.156-26.932c0.548-2.374-0.92-3.302-2.594-2.72l-36.194 12.934c-2.47 0.896-2.434 2.18-0.42 2.766l9.252 2.684 21.492-12.552c1.012-0.626 1.932-0.28 1.176 0.346l-17.386 14.57z"></path>
 </symbol>
