@@ -41,14 +41,16 @@ textarea {
     background-color: transparent;
     border: 1px solid $darkAccentColor;
     border-radius: 50%;
+    color: $darkAccentColor;
     fill: $darkAccentColor;
     cursor: pointer;
     &:hover,
     &:focus {
         border-color: #fff;
         fill: #fff;
+        color: $lightestColor;
     }
-    @include transition(border-color, fill);
+    @include transition(border-color, fill, color);
 }
 
 .modal__icon-close {
@@ -228,6 +230,6 @@ textarea {
     &:hover,
     &:focus {
         background-color: $darkAccentColor;
-        color: #fff;
+        color: $lightestColor;
     }
 }
