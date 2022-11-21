@@ -47,8 +47,7 @@
   @include productCard ($backgroundAccentExtra);
 }
 
-.modal__header {
-  color: $darkAccentColor;
+  %modal-header {
   font-family: $title-font;
   font-weight: $fontWeightLight;
   font-size: $fontSizeTBig;
@@ -56,21 +55,23 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.modal__header--coff {
+  @extend %modal-header;
+  color: $backgroundAccentExtraDark;
 }
 
 .pro-modal {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .pro-modal__item {
   margin: 20px 0;
-}
-
-.pro-modal__item:nth-child(2n+1) {
-    margin-right: 20px;
 }
 
 .pro-modal__item-header {
