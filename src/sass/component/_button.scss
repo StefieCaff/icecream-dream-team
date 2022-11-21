@@ -27,7 +27,7 @@
 
 .button--buy-tablet {
   @extend %button;
-  padding: 10px 20px;
+  padding: 10px 40px;
   display: none;
 
   @include mq (tablet) {
@@ -211,8 +211,9 @@
 
 .button-about {
   @extend %button;
-  padding: 12px 30px;
+  padding: 12px 20px;
   margin-top: 20px;
+  width: 176px;
 
     @include transition (background-color);
       &:hover,
