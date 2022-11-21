@@ -1,6 +1,7 @@
 .products {
   @include mq (tablet) {
     display: flex;
+    position: relative;
   }
 
 }
@@ -54,11 +55,11 @@
   position: absolute;
 
   @include mq (tablet) {
-    left: 32;
+    left: 2;
   }
 
   @include mq (desktop) {
-    left: 38;
+    left: 20;
   }
 }
 
@@ -67,11 +68,11 @@
 position: absolute;
 
 @include mq (tablet) {
-    left: 272;
+    left: 245;
   }
 
   @include mq (desktop) {
-    left: 466;
+    left: 446;
   }
 }
 
@@ -80,11 +81,11 @@ position: absolute;
 position: absolute;
 
 @include mq (tablet) {
-    left: 526;
+    left: 492;
   }
 
   @include mq (desktop) {
-    left: 892;
+    left: 875;
   }
 }
 
