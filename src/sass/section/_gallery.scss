@@ -9,7 +9,12 @@
    }
 }
 
-
+.gallery__image {
+   @include mq(desktop) {
+      padding: 60px 0;
+      margin-left: 100px;
+         }
+}
 // .gallery__image {
 //   @include backgroundImg (url(../images/mobile/m-gallery.png), url(../images/mobile/m-gallery-2x.png));
 
