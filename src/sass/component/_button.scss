@@ -139,7 +139,7 @@
   border: none;
   margin: 32px 0 40px 0;
   @include transition (background-color);
-    
+
     &:hover,
     &:focus {
       background-color: $hoverLight;
@@ -213,4 +213,14 @@
   @extend %button;
   padding: 12px 30px;
   margin-top: 20px;
+
+    @include transition (background-color);
+      &:hover,
+      &:focus {
+        background-color: $hoverLight;
+      }
+
+    @include mq (desktop) {
+        margin-right: 60px;
+      }
 }

@@ -1,10 +1,20 @@
 .about {
   padding-bottom: 40px;
   background-color: $backgroundColorSecondary;
+
 }
 
 .about__container {
   position: relative;
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width:1280px) {
+    margin-bottom: 20px;
+  }
+
     
 //   @media screen and (min-width:768px) {
 // }
@@ -16,9 +26,17 @@
 //     }
 }
 
+.about__flex {
+  display: block;
+  @media screen and (min-width:768px) {
+      display: flex; 
+    }
+
+}
+
 .about__background-img {
   left: 20;
-  top: 495;
+  top: 660;
   background-image: url(../images/mobile/m-milk.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -27,11 +45,12 @@
   height: 133px;
   position: absolute;
   z-index: 0;
-@include mq (mobile) {
-    top: 484;
-    width: 410px;
-   
-}
+
+  @include mq (mobile) {
+      top: 530;
+      width: 410px;
+
+  }
 
   @include mq (tablet) {
     background-image: none;
@@ -44,7 +63,7 @@
     padding: 0px;
     top: 236px;
     left: 0px;
-    }
+  }
 }
 
 .about__wrapper {
@@ -75,24 +94,27 @@
 .about__paragraph-one {
 
     color: $darkestColor;
-    font-size: $fontSizeSmall;
+    font-size: 16px;
     font-weight: $fontWeightMed;
-    line-height: 19.44px;
+    line-height: 28.16px;
     font-style: $pr-font;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-right: 80px;
+    margin-right: 70px;
     position: relative;
-
-  margin-top: 40px;
-
 
  //@include mq (tablet) {
 //    margin-right: 32px;
   //}
-    
+  @include mq (tablet) {
+    margin-left: 20px;
+    }
+  
   @include mq (desktop) {
     margin-top: 90px;
+    margin-left: 60px;
+    margin-right: 100px;
+    
   }
 }
 
@@ -101,10 +123,10 @@
     color: $fontColorAccentLight;
     font-size: $fontSizeSmall;
     font-style: $pr-font;
-    line-height: 19.44px;
+    line-height: 27.16px;
     color: $fontColorAccentLight;
     margin-bottom: 20px;
-    margin-right: 80px;
+    margin-right: 70px;
     position: relative;
 
     @media screen and (min-width:768px) {
@@ -115,11 +137,14 @@
   color: $fontColorAccentLight;
   margin-top: 40px;
 
-// @include mq (tablet) {
-// }
+    @include mq (tablet) {
+      margin-left: 20px;
+    }
 
-// @media screen and (min-width:1280px) {    
-// }
+    @media screen and (min-width:1280px) {    
+    margin-left: 60px;
+      margin-right: 100px;
+    }
 }
 
 .about__image {
@@ -137,6 +162,7 @@
             background-repeat: no-repeat;
                     width: 501px;
                         height: auto;
+            margin-right: 300px;
         }
     
         @include mq(desktop) {
