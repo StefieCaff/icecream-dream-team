@@ -3,7 +3,7 @@
   @include font($fontSizeMedium, $fontWeightHeavy, 18px, 0.06em);
   border-radius: 22px;
   border: none;
-  transition-property: background-color, color;
+  transition-property: background-color, color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -11,6 +11,7 @@
     &:hover {
 
     @include hover-focus ($hoverLight, $darkAccentColor);
+    transform: scale(1.1);
   }
 }
 
@@ -109,10 +110,11 @@
   border-radius: 50%;
   border: none;
 
-  @include transition (background-color);
+  @include transition (background-color, transform);
     &:hover,
     &:focus {
       background-color: $hoverLight;
+      transform: scale(1.1);
   }
 
   @include mq (desktop) {
@@ -141,11 +143,12 @@
   border-radius: 50%;
   border: none;
   margin: 32px 0 40px 0;
-  @include transition (background-color);
+  @include transition (background-color, transform);
 
     &:hover,
     &:focus {
       background-color: $hoverLight;
+      transform: scale(1.1);
   }
 }
 
@@ -159,13 +162,7 @@
   padding: 15px 30px;
   width: 170px;
   margin-top: 20px;
-  margin-left: 23px;
-  // @include transition (background-color);
-    
-    &:hover,
-    &:focus {
-      background-color: $hoverLight;
-    }
+  margin-left: 23px;  
 }
 
 .ice__button {

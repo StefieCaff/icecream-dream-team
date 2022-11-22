@@ -56,9 +56,8 @@
    }
 }
 
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
+.contacts-modal {
+  background-color: $backgroundColorSecondary;
 }
 
 .ice__modal {

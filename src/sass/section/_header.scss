@@ -16,6 +16,7 @@
   right: 0;
   border: none;
   background-color: transparent;
+  color: $darkAccentColor;
 
   @include mq (tablet) {
     right: 225px;
@@ -24,12 +25,12 @@
 
 .burger--icon {
   cursor: pointer;
-  fill: $darkAccentColor;
-  @include transition (fill);
+  @include transition (color, transform);
 
   &:hover,
   &:focus {
     fill: $lightestColor;
+    transform: scale(1.1);
   }
 
   @include mq (desktop) {
