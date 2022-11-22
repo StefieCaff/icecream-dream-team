@@ -77,3 +77,8 @@
   background-color: $background-color;
   border-radius: 24px;
 }
+
+@mixin hover-focus ($background, $color) {
+  background-color: $background;
+  color: $color;
+}

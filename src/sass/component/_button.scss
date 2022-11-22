@@ -1,11 +1,8 @@
 %button {
   font-family: $pr-font;
-  background-color: $lightestColor;
-  color: $darkAccentColor;
   @include font($fontSizeMedium, $fontWeightHeavy, 18px, 0.06em);
   border-radius: 22px;
   border: none;
-  // animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s infinite alternate both;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -13,13 +10,14 @@
     &:focus,
     &:hover {
 
-      background-color: $hoverLight;
-      color: $darkAccentColor;
+    @include hover-focus ($hoverLight, $darkAccentColor);
   }
 }
 
 .button--buy-mobile-menu {
   @extend %button;
+  color: $darkAccentColor;
+  background-color: $lightestColor;
   padding: 10px 48px;
   width: 209px;
   margin-bottom: 32px;
@@ -27,6 +25,8 @@
 
 .button--buy-tablet {
   @extend %button;
+  color: $darkAccentColor;
+  background-color: $lightestColor;
   padding: 10px 40px;
   display: none;
 
@@ -41,6 +41,8 @@
 
 .button__icon-menu,
 .button-about__svg {
+  // color: $darkAccentColor;
+  // background-color: $lightestColor;
     margin-left: 14px;
 
     @include mq (tablet) {
@@ -57,8 +59,7 @@
   padding-left: 4px;
 }
 
-.hero__button,
-.button-products {
+.hero__button {
   @extend %button;
     display: inline-flex;
     padding: 7px;
@@ -88,13 +89,15 @@
 }
 
 .hero__button--how {
-    width: 82px;
-    Left: 70px;
-    top: 120px;
+  color: $darkAccentColor;
+  background-color: $lightestColor;
+  width: 82px;
+  Left: 70px;
+  top: 120px;
 
   @include mq (desktop) {
     width: 138px;
-    }
+  }
 }
 
 .hero--advantages__button {
@@ -150,15 +153,14 @@
   margin-top: 3px;
 }
 
-.ice__button {
-  background-color: $darkAccentColor;
+.pro__button {
+  @extend %button;
   color: $lightestColor;
-  font-size: $fontSizeMain;
-  width: 140px;
-  padding: 15px;
-  margin-left: 45px;
-  margin-top: 25px;
-  @include transition (background-color);
+  padding: 15px 30px;
+  width: 170px;
+  margin-top: 20px;
+  margin-left: 23px;
+  // @include transition (background-color);
     
     &:hover,
     &:focus {
@@ -166,51 +168,34 @@
     }
 }
 
-/* About Button */
-// .button-about {
-//     background-color: $lightestColor;
-//     border: none;
-//     border-radius: 22px;
-  
-//     width: 176px;
-//     height: 44px;
-//     font-size: $fontSizeMain;
-//     font-weight: 700;
-//     color: $darkAccentColor;
-//     line-height: 18px;
+.ice__button {
+  background-color: $darkAccentColor;
+}
 
-//     display: flex;
-//     text-align: center;
-//     justify-content: center;
-    
-//     margin-top: 20px;
-//     padding: 10px 20px;
+.coff__button {
+  background-color: $backgroundAccentExtraDark;
 
-//     @include transition (background-color);
-//       &:hover,
-//       &:focus {
-//         background-color: $hoverLight;
-//       }
-//     @include mq (tablet) {
-//       margin-top: 40px;
-//         // margin-left: 400px;
-//     }
+  &:focus,
+  &:hover {
+      
+  @include hover-focus ($hoverLight, $backgroundAccentExtraDark);
+  }
+}
 
-//     @include mq (desktop) {
-//         // margin-left: 616px;
-//     }
+.shake__button {
+  background-color: $backgroundAccentOtherDark;
 
-//     &__svg {
-//       fill: red;
-//       border: 2px;
-//       margin-left: 13px;
-//       margin-top: 6px;
-//     }
-
-// }
+  &:focus,
+  &:hover {
+      
+  @include hover-focus ($hoverLight, $backgroundAccentOtherDark);
+  }
+}
 
 .button-about {
   @extend %button;
+  color: $darkAccentColor;
+  background-color: $lightestColor;
   padding: 12px 20px;
   margin-top: 20px;
   width: 176px;
