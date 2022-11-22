@@ -45,9 +45,9 @@
   height: 133px;
   position: absolute;
   z-index: 0;
+  top: 540;
 
   @include mq (mobile) {
-      top: 530;
       width: 410px;
 
   }
@@ -94,7 +94,7 @@
 .about__paragraph-one {
 
     color: $darkestColor;
-    font-size: 16px;
+    font-size: $fontSizeSmall;
     font-weight: $fontWeightMed;
     line-height: 28.16px;
     font-style: $pr-font;
@@ -108,42 +108,44 @@
   //}
   @include mq (tablet) {
     margin-left: 20px;
+    margin-right: 0px;
+    font-size: 14px;
     }
   
   @include mq (desktop) {
     margin-top: 90px;
     margin-left: 60px;
-    margin-right: 100px;
-    
+    margin-right: 120px;
+    font-size: $fontSizeMedium;
   }
 }
 
 .about__paragraph-two {
+  color: $fontColorAccentLight;
+  font-size: $fontSizeSmall;
+  font-style: $pr-font;
+  line-height: 27.16px;
+  color: $fontColorAccentLight;
+  margin-bottom: 20px;
+   // margin-right: 70px;
+  position: relative;
+  color: $fontColorAccentLight;
+  margin-top: 40px;
 
-    color: $fontColorAccentLight;
-    font-size: $fontSizeSmall;
-    font-style: $pr-font;
-    line-height: 27.16px;
-    color: $fontColorAccentLight;
-    margin-bottom: 20px;
-    margin-right: 70px;
-    position: relative;
 
     @media screen and (min-width:768px) {
         font-size: $fontSizeMain;
     }
 
-   
-  color: $fontColorAccentLight;
-  margin-top: 40px;
-
     @include mq (tablet) {
       margin-left: 20px;
+      font-size: $fontSizeMain;
     }
 
     @media screen and (min-width:1280px) {    
     margin-left: 60px;
-      margin-right: 100px;
+    margin-right: 120px;
+    font-size: $fontSizeMain;
     }
 }
 
@@ -160,8 +162,8 @@
             background-image: url(../images/tablet/t-cow-milk.png);
             background-size: cover;
             background-repeat: no-repeat;
-                    width: 501px;
-                        height: auto;
+            width: 501px;
+            height: auto;
             margin-right: 300px;
         }
     
