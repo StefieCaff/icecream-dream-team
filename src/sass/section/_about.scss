@@ -37,7 +37,7 @@
 .about__background-img {
   left: 20;
   top: 660;
-  background-image: url(../images/mobile/m-milk.png);
+  background-image: url(../images/mobile/m-milk280.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -57,7 +57,7 @@
   }
 
   @include mq (desktop) {
-    background-image: url(../images/desktop/d-milk.png);
+    background-image: url(../images/desktop/d-milk1200.png);
     width: 1280px;
     height: 581px;
     padding: 0px;
@@ -153,13 +153,13 @@
         background-repeat: no-repeat;
         background-size: cover;
         margin-left: 40px;
-        background-image: url(../images/mobile/m-cow-milk.png);
+        background-image: url(../images/mobile/m-cow280.png);
     
         width: 280px;
         height: 279px;
 
         @include mq(tablet) {
-            background-image: url(../images/tablet/t-cow-milk.png);
+            background-image: url(../images/tablet/t-cow336.png);
             background-size: cover;
             background-repeat: no-repeat;
             width: 501px;
@@ -168,7 +168,7 @@
         }
     
         @include mq(desktop) {
-            background-image: url(../images/desktop/d-cow-milk.png);
+            background-image: url(../images/desktop/d-cow501.png);
             background-size: cover;
             background-repeat: no-repeat;
     
@@ -254,7 +254,7 @@
 // }
 
 // .about__img {
-//   @include backgroundImg (url(../images/mobile/m-cow-milk.png), url(../images/mobile/m-cow-milk.png));
+//   @include backgroundImg (url(../images/mobile/m-cow280.png), url(../images/mobile/m-cow560.png));
 //   background-position: center;
 //   background-repeat: no-repeat;
 //   background-size: cover;
@@ -264,7 +264,7 @@
 //   margin-top: 32px;
 
 //     @include mq (tablet) {
-//       @include backgroundImg (url(../images/tablet/t-cow-milk.png), url(../images/tablet/t-cow-milk.png));
+//       @include backgroundImg (url(../images/tablet/t-cow336.png), url(../images/tablet/t-cow672.png));
 //       width: 336px;
 //       height: 336px;
 //       margin-top: 40px;
@@ -272,7 +272,7 @@
 //     }
 
 //   @include mq (desktop) {
-//     @include backgroundImg (url(../images/desktop/d-cow-milk.png), url(../images/desktop/d-cow-milk.png));
+//     @include backgroundImg (url(../images/desktop/d-cow501.png), url(../images/desktop/d-cow1002.png));
 //       width: 501px;
 //       height: 501px;
 //       margin-right: 100px;
@@ -280,7 +280,7 @@
 // }
 
 // .about__img-background {
-//   @include backgroundImg (url(../images/mobile/m-milk.png), url(../images/mobile/m-milk.png));
+//   @include backgroundImg (url(../images/mobile/m-milk280.png), url(../images/mobile/m-milk560.png));
 //   background-repeat: no-repeat;
 //   background-size: cover;
 //   position: absolute;
@@ -294,7 +294,7 @@
 //   }
 
 //   @include mq (desktop) {
-//     @include backgroundImg (url(../images/desktop/d-milk.png), url(../images/desktop/d-milk.png));
+//     @include backgroundImg (url(../images/desktop/d-milk1200.png), url(../images/desktop/d-milk2400.png));
 //     background-repeat: no-repeat;
 //     background-size: cover;
 //     position: absolute;
