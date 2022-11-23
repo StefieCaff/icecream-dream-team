@@ -147,6 +147,7 @@ textarea {
     border-radius: 50%;
     vertical-align: text-top;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .custom-radio-btn::before {
@@ -172,6 +173,7 @@ textarea {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .modal__checkbox-input {
