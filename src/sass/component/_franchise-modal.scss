@@ -46,8 +46,8 @@ textarea {
     cursor: pointer;
     &:hover,
     &:focus {
-        border-color: #fff;
-        fill: #fff;
+        border-color: $lightestColor;
+        fill: $hoverLight;
         color: $lightestColor;
     }
     @include transition(border-color, fill, color);
