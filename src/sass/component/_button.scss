@@ -189,6 +189,58 @@
   }
 }
 
+%modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__close--ice {
+  @extend %modal__close;
+  border-color: $darkAccentColor;
+  color: $backgroundAccentLight;
+  &:hover,
+  &:focus {
+    border-color: $backgroundAccentLight;
+    color: $darkAccentColor;
+  }
+  @include transition(border-color, color);
+}
+
+.modal__close--coff {
+  @extend %modal__close;
+  border-color: $backgroundAccentExtraDark;
+  color: $backgroundAccentExtra;
+
+  &:hover,
+  &:focus {
+    border-color: $backgroundAccentExtra;
+    color: $backgroundAccentExtraDark;
+  }
+
+  @include transition(border-color, color);
+}
+
+.modal__close--shake {
+  @extend %modal__close;
+  border-color: $backgroundAccentOtherDark;
+  color: $backgroundAccentOther;
+
+  &:hover,
+  &:focus {
+    border-color: $backgroundAccentOther;
+    color: $backgroundAccentOtherDark;
+  }
+
+  @include transition(border-color, color);
+}
+
 .button-about {
   @extend %button;
   color: $darkAccentColor;
