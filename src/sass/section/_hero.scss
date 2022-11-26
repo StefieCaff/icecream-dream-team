@@ -210,7 +210,7 @@
   @include mq(tablet) {
     display: block;
     position: absolute;
-    z-index:1;
+    // z-index: 1;
     right: 42px;
     bottom: 220px;
     text-align: right;
