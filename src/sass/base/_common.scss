@@ -98,7 +98,6 @@ body {
   text-align: center;
   text-transform: upercase;
   margin-bottom: 15px;
-  padding-top: 50px;
 
   @include mq (tablet) {
     font-size: $fontSizeTBig;
