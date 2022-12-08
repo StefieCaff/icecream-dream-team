@@ -254,6 +254,7 @@
       &:focus {
         background-color: $hoverLight;
       }
+      
 
     @include mq (desktop) {
         margin-right: 60px;

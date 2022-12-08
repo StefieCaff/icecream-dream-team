@@ -1,6 +1,6 @@
 .about {
   background-color: $backgroundColorSecondary;
-  padding-bottom: 40px;
+ // padding-bottom: 40px;
   position: relative;
 }
 
@@ -18,7 +18,7 @@
 
 .about__text {
   @include font($fontSizeSmall, $fontWeightMed, 25px, 0.04em);
-  margin-top: 40px;
+ // margin-top: 40px;
   text-align: left;
   position: relative;
   margin-right: 80px;
@@ -42,6 +42,10 @@
 }
 
 .about__paragraph-two {
+  color: $fontColorAccentLight;
+}
+
+.about__paragraph-three {
   color: $fontColorAccentLight;
 }
 
