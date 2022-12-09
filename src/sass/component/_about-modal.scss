@@ -1,0 +1,31 @@
+.about__modal {
+    @extend %pro-modal;
+    background-color: $backgroundColorSecondary;
+}
+
+.modal__close--about {
+    @extend %modal__close;
+    border-color: $backgroundColorSecondary;
+    color: $darkAccentColor;
+
+    &:hover,
+    &:focus {
+        border-color: $backgroundAccentLight;
+        color: $backgroundAccentLight;
+    }
+
+    @include transition(border-color, color);
+}
+
+.modal__title {
+    @extend %pro-modal-header;
+    margin-bottom: 20px;
+    color: $darkAccentColor;
+    margin-top: 20px;
+}
+
+.about-modal__wrapper {
+    border: 2px solid $soc-bg-color;
+    border-radius: 24px;
+    padding: 20px;
+}
