@@ -156,39 +156,6 @@
   margin-top: 3px;
 }
 
-.pro__button {
-  @extend %button;
-  color: $lightestColor;
-  padding: 15px 30px;
-  width: 170px;
-  margin-top: 20px;
-  margin-left: 23px;  
-}
-
-.ice__button {
-  background-color: $darkAccentColor;
-}
-
-.coff__button {
-  background-color: $backgroundAccentExtraDark;
-
-  &:focus,
-  &:hover {
-      
-  @include hover-focus ($hoverLight, $backgroundAccentExtraDark);
-  }
-}
-
-.shake__button {
-  background-color: $backgroundAccentOtherDark;
-
-  &:focus,
-  &:hover {
-      
-  @include hover-focus ($hoverLight, $backgroundAccentOtherDark);
-  }
-}
-
 %modal__close {
   position: absolute;
   top: 16px;
@@ -203,25 +170,24 @@
 
 .modal__close--ice {
   @extend %modal__close;
-  border-color: $darkAccentColor;
-  color: $backgroundAccentLight;
-  &:hover,
-  &:focus {
     border-color: $backgroundAccentLight;
     color: $darkAccentColor;
+  &:hover,
+  &:focus {
+    border-color: $lightestColor;
+    color: $lightestColor;
   }
   @include transition(border-color, color);
 }
 
 .modal__close--coff {
   @extend %modal__close;
-  border-color: $backgroundAccentExtraDark;
-  color: $backgroundAccentExtra;
-
-  &:hover,
-  &:focus {
     border-color: $backgroundAccentExtra;
     color: $backgroundAccentExtraDark;
+  &:hover,
+  &:focus {
+    border-color: $lightestColor;
+      color: $lightestColor;
   }
 
   @include transition(border-color, color);
@@ -229,13 +195,13 @@
 
 .modal__close--shake {
   @extend %modal__close;
-  border-color: $backgroundAccentOtherDark;
-  color: $backgroundAccentOther;
+    border-color: $backgroundAccentOther;
+    color: $backgroundAccentOtherDark;
 
   &:hover,
   &:focus {
-    border-color: $backgroundAccentOther;
-    color: $backgroundAccentOtherDark;
+    border-color: $lightestColor;
+    color: $lightestColor;
   }
 
   @include transition(border-color, color);
@@ -249,15 +215,9 @@
   margin-top: 20px;
   width: 176px;
 
-    @include transition (background-color);
-      &:hover,
-      &:focus {
-        background-color: $hoverLight;
-      }
-      
-
-    @include mq (desktop) {
-        margin-right: 60px;
-        margin-left: 60px;
-      }
+  @include transition (background-color);
+  &:hover,
+  &:focus {
+    background-color: $hoverLight;
+  }
 }

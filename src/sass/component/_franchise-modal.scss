@@ -7,47 +7,42 @@ textarea {
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    &.modal {
-        transform: translate(-50%, -50%) scale(0.9);
-    }
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  &.modal {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
 }
 
-.modal__close {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 28px;
-    height: 28px;
-    background-color: transparent;
-    border: 1px solid $darkAccentColor;
-    border-radius: 50%;
-    color: $backgroundColorSecondary;
-    // fill: $darkAccentColor;
-    cursor: pointer;
-    &:hover,
-    &:focus {
-      border-color: $backgroundColorSecondary;
-    //   fill: $hoverLight;
-      color: $darkAccentColor;
-    }
-    @include transition(border-color, color);
+.contacts__modal {
+    @extend %pro-modal;
+    background-color: $backgroundColorSecondary;
 }
 
-// .modal__icon-close {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-// }
+.modal__close--franchise {
+  @extend %modal__close;
+  border-color: $backgroundColorSecondary;
+  color: $darkAccentColor;
+  &:hover,
+  &:focus {
+    border-color: $backgroundAccentLight;
+    color: $backgroundAccentLight;
+  }
+  @include transition(border-color, color);
+}
 
 .modal__title {
   @extend %pro-modal-header;
   margin-bottom: 20px;
   color: $darkAccentColor;
   margin-top: 20px;
+}
+
+.contacts-modal__wrapper {
+  border: 2px solid $soc-bg-color;
+  border-radius: 24px;
+  padding: 20px;
 }
 
 .modal__label {
@@ -208,7 +203,8 @@ textarea {
 
 .fran-modal__button {
     @extend %button;
+    width: 150px;
     background-color: $darkAccentColor;
     color: $lightestColor;
-    margin: 0 auto;
+    margin: 60px auto 0;
 }

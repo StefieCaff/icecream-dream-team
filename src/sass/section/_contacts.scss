@@ -1,10 +1,10 @@
 .contacts {
-    background-image: linear-gradient(#E5E5E5 23%, #fff5f6 23%);
+    background-image: linear-gradient($backgroundColorMain 23%, $backgroundColorSecondary 23%);
     @include mq(tablet) {
-    background-image: linear-gradient(#E5E5E5 39%, #fff5f6 39%);
+    background-image: linear-gradient($backgroundColorMain 39%, $backgroundColorSecondary 39%);
     }
     @include mq(desktop) {
-    background-image: linear-gradient(#E5E5E5 20%, #fff5f6 20%);
+    background-image: linear-gradient($backgroundColorMain 20%, $backgroundColorSecondary 20%);
     }
 }
 
@@ -43,7 +43,7 @@
         max-width: 280px;
     }
     .contacts__item:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 }
 
@@ -52,7 +52,7 @@
     align-items: center;
     text-align: center;
     padding: 0 26px;
-    background-color: #f0d1a5;
+    background-color: $backgroundAccentExtra;
     border-radius: 4px;
     margin-bottom: 20px;
     height: 16px;
@@ -60,7 +60,7 @@
 }
 
 .contacts__title--green {
-    background-color: #c2e297;
+    background-color: $backgroundAccentOther;
 }
 
 .contacts__text-black {
@@ -136,7 +136,7 @@
         margin-right: 15px;
     }
     @include mq(desktop) {
-        margin-right: 12px;
+        margin-right: 20px;
     }
 }
 
