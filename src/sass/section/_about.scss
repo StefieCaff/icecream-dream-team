@@ -1,6 +1,5 @@
 .about {
   background-color: $backgroundColorSecondary;
- // padding-bottom: 40px;
   position: relative;
 }
 
@@ -10,7 +9,6 @@
 }
 
 .about__wrapper {
-  
   @include mq (tablet) {
   display: flex;
   }
@@ -18,7 +16,6 @@
 
 .about__text {
   @include font($fontSizeSmall, $fontWeightMed, 25px, 0.04em);
- // margin-top: 40px;
   text-align: left;
   position: relative;
   margin-right: 80px;
@@ -35,14 +32,21 @@
 }
 
 .about__paragraph-one {
+  margin: 20px 0;
+
+  @include mq (tablet) {
+    margin-top: 40px;
+  }
   @include mq (desktop) {
-    margin-top: 150px;
     font-size: $fontSizeMedium;
+    margin-top: 150px;
+    margin-bottom: 12px;
   }
 }
 
 .about__paragraph-two {
   color: $fontColorAccentLight;
+  margin: 20px 0;
 }
 
 .about__paragraph-three {
@@ -56,7 +60,6 @@
   background-size: cover;
   width: 280px;
   height: 280px;
-  // position: relative;
   margin-top: 32px;
 
     @include mq (tablet) {
@@ -72,6 +75,7 @@
       width: 501px;
       height: 501px;
       margin-right: 100px;
+      margin-top: 60px;
   }
 }
 
@@ -99,6 +103,5 @@
     width: 100vw;
     min-height: 521px;
     top: 166;
-    // left: 0;
   }
 }
