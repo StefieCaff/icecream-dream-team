@@ -1,18 +1,19 @@
 input {
-  outline: none;
+    outline: none;
 }
 
 textarea {
-  outline: none;
+    outline: none;
 }
 
 .backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  &.modal {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    &.modal {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
 }
 
 .contacts__modal {
@@ -21,37 +22,40 @@ textarea {
 }
 
 .modal__close--franchise {
-  @extend %modal__close;
-  border-color: $backgroundColorSecondary;
-  color: $soc-bg-color;
-  &:hover,
-  &:focus {
-    border-color: $darkAccentColor;
-    color: $darkAccentColor;
-  }
-  @include transition(border-color, color);
+    @extend %modal__close;
+    border-color: $backgroundColorSecondary;
+    color: $soc-bg-color;
+
+    &:hover,
+    &:focus {
+        border-color: $darkAccentColor;
+        color: $darkAccentColor;
+    }
+
+    @include transition(border-color, color);
 }
 
 .modal__title {
-  @extend %pro-modal-header;
-  margin-bottom: 20px;
-  color: $darkAccentColor;
-  margin-top: 20px;
+    @extend %pro-modal-header;
+    margin-bottom: 20px;
+    color: $darkAccentColor;
+    margin-top: 20px;
 }
 
 .contacts-modal__wrapper {
-  border: 2px solid $soc-bg-color;
-  border-radius: 24px;
-  padding: 20px;
+    border: 2px solid $soc-bg-color;
+    border-radius: 24px;
+    padding: 20px;
 }
 
 .modal__label {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  &:nth-child(5) {
-  margin-bottom: 20px;
-  }
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &:nth-child(5) {
+        margin-bottom: 20px;
+    }
 }
 
 .modal__text {
@@ -68,15 +72,18 @@ textarea {
     padding: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
     &:focus {
         border-color: $darkAccentColor;
     }
+
     &::placeholder {
         font-family: $title-font;
         font-size: 12px;
         letter-spacing: 0.04em;
         color: $backgroundAccentLight;
     }
+
     @include transition(border-color);
 }
 
@@ -86,16 +93,23 @@ textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+
     &:focus {
         border-color: $darkAccentColor;
     }
+
     &::placeholder {
         font-family: $title-font;
         font-size: 12px;
         letter-spacing: 0.04em;
         color: $backgroundAccentLight;
     }
+
     @include transition(border-color);
+}
+
+.modal__option {
+  color: $darkAccentColor;
 }
 
 .modal__radio {
@@ -117,6 +131,7 @@ textarea {
 .modal__label-radio {
     display: flex;
     align-items: center;
+
     &:not(:last-child) {
         margin-bottom: 5px;
     }
@@ -163,7 +178,7 @@ textarea {
     transform: translate(-50%, -50%) scale(1);
 }
 
-// Custom radio
+// Custom checkbox
 .modal__checkbox {
     display: flex;
     align-items: center;
@@ -173,12 +188,14 @@ textarea {
 
 .modal__checkbox-input {
     appearance: none;
+
     &:focus+.modal__checkbox-icon {
         border-color: $darkAccentColor;
     }
+
     &:checked+.modal__checkbox-icon {
         background-origin: border-box;
-        background-color:$darkAccentColor;
+        background-color: $darkAccentColor;
         border-color: $darkAccentColor;
         fill: $lightestColor;
     }
