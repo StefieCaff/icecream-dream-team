@@ -40,5 +40,6 @@
 
 .about-modal__description {
   @include font($fontSizeMain, $fontWeightMed, 27px, 0.04em);
-  color: #907E82;
+  color: $fontColorAccentLight;
+ 
 }
