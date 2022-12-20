@@ -40,6 +40,17 @@
   }
 }
 
+.button-about {
+  @extend %button;
+  color: $darkAccentColor;
+  background-color: $lightestColor;
+  padding: 12px 20px;
+  margin-top: 40px;
+  width: 176px;
+  position: relative;
+  z-index: 1;
+}
+
 .button__icon-menu,
 .button-about__svg {
     padding-top: 2px;
@@ -204,19 +215,4 @@
   }
 
   @include transition(border-color, color);
-}
-
-.button-about {
-  @extend %button;
-  color: $darkAccentColor;
-  background-color: $lightestColor;
-  padding: 12px 20px;
-  margin-top: 40px;
-  width: 176px;
-
-  @include transition (background-color);
-  &:hover,
-  &:focus {
-    background-color: $hoverLight;
-  }
 }
