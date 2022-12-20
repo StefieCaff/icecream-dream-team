@@ -85,10 +85,10 @@
   background-size: cover;
   position: absolute;
   z-index: 0;
-  top: 570;
+  top: 530;
   left: 0;
   width: 100vw;
-  min-height: 187px;
+  min-height: 200px;
 
   @include mq (tablet) {
     background-image: unset;
